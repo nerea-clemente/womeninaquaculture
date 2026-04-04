@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #1e293b;
+
+  /* Primary - Deep Ocean Teal */
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #0f766e;
+  --color-teal-600: #0d6660;
+  --color-teal-700: #0a5550;
+  --color-teal-800: #083f3b;
+  --color-teal-900: #062b28;
+
+  /* Secondary - Seafoam / Aqua */
+  --color-seafoam-50: #f0fdf9;
+  --color-seafoam-100: #d5f5ed;
+  --color-seafoam-200: #a7edd8;
+  --color-seafoam-300: #6ddcbc;
+  --color-seafoam-400: #38c49e;
+  --color-seafoam-500: #1ea885;
+
+  /* Warm Sand / Neutral */
+  --color-sand-50: #fefcf8;
+  --color-sand-100: #fdf6e9;
+  --color-sand-200: #f5e6c8;
+  --color-sand-300: #edd6a7;
+  --color-sand-400: #e0c080;
+  --color-sand-500: #c9a45e;
+
+  /* Coral Accent */
+  --color-coral-50: #fff5f2;
+  --color-coral-100: #ffe8e0;
+  --color-coral-200: #ffc9b8;
+  --color-coral-300: #ffa48a;
+  --color-coral-400: #f47c5c;
+  --color-coral-500: #e05a38;
+
+  /* Navy / Dark */
+  --color-navy-700: #1e3a5f;
+  --color-navy-800: #172e4a;
+  --color-navy-900: #0f1f33;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for interactive elements */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animation-delay-100 { animation-delay: 0.1s; }
+.animation-delay-200 { animation-delay: 0.2s; }
+.animation-delay-300 { animation-delay: 0.3s; }
+.animation-delay-400 { animation-delay: 0.4s; }
+.animation-delay-500 { animation-delay: 0.5s; }
