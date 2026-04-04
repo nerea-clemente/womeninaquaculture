@@ -1,53 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 @import "tailwindcss";
+
+/*
+  Custom font: Thalasa
+  Place your font files in public/fonts/ and uncomment below.
+  Supported formats: .woff2 (preferred), .woff, .ttf, .otf
+*/
+@font-face {
+  font-family: 'Thalasa';
+  src: url('/womeninaquaculture/fonts/Thalasa-Regular.woff2') format('woff2'),
+       url('/womeninaquaculture/fonts/Thalasa-Regular.woff') format('woff'),
+       url('/womeninaquaculture/fonts/Thalasa-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thalasa';
+  src: url('/womeninaquaculture/fonts/Thalasa-Bold.woff2') format('woff2'),
+       url('/womeninaquaculture/fonts/Thalasa-Bold.woff') format('woff'),
+       url('/womeninaquaculture/fonts/Thalasa-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme inline {
   --color-background: #ffffff;
-  --color-foreground: #1e293b;
+  --color-foreground: #234e52;
 
-  /* Primary - Deep Ocean Teal */
-  --color-teal-50: #f0fdfa;
-  --color-teal-100: #ccfbf1;
-  --color-teal-200: #99f6e4;
-  --color-teal-300: #5eead4;
-  --color-teal-400: #2dd4bf;
-  --color-teal-500: #0f766e;
-  --color-teal-600: #0d6660;
-  --color-teal-700: #0a5550;
-  --color-teal-800: #083f3b;
-  --color-teal-900: #062b28;
+  /* Primary - Deep Teal  #1b7e82 */
+  --color-teal-50: #eefbfb;
+  --color-teal-100: #d4f4f5;
+  --color-teal-200: #a8e8ea;
+  --color-teal-300: #6dd5d8;
+  --color-teal-400: #34b8bc;
+  --color-teal-500: #1b7e82;
+  --color-teal-600: #176d70;
+  --color-teal-700: #135b5e;
+  --color-teal-800: #0f494c;
+  --color-teal-900: #0b3739;
 
-  /* Secondary - Seafoam / Aqua */
-  --color-seafoam-50: #f0fdf9;
-  --color-seafoam-100: #d5f5ed;
-  --color-seafoam-200: #a7edd8;
-  --color-seafoam-300: #6ddcbc;
-  --color-seafoam-400: #38c49e;
-  --color-seafoam-500: #1ea885;
+  /* Secondary - Seafoam  #81cebe */
+  --color-seafoam-50: #f0fbf8;
+  --color-seafoam-100: #d8f3ec;
+  --color-seafoam-200: #b3e8db;
+  --color-seafoam-300: #81cebe;
+  --color-seafoam-400: #5bb8a5;
+  --color-seafoam-500: #3d9d8a;
 
-  /* Warm Sand / Neutral */
-  --color-sand-50: #fefcf8;
-  --color-sand-100: #fdf6e9;
-  --color-sand-200: #f5e6c8;
-  --color-sand-300: #edd6a7;
-  --color-sand-400: #e0c080;
-  --color-sand-500: #c9a45e;
+  /* Dark Teal  #234e52 */
+  --color-navy-700: #2d6166;
+  --color-navy-800: #234e52;
+  --color-navy-900: #1a3b3e;
 
-  /* Coral Accent */
+  /* Light Neutral  #f9fafb / #fcf8f2 */
+  --color-sand-50: #fcf8f2;
+  --color-sand-100: #f9f3e8;
+  --color-sand-200: #f0e6d2;
+  --color-sand-300: #e5d5b8;
+  --color-sand-400: #d4bc91;
+  --color-sand-500: #c0a06a;
+
+  /* Gold / Yellow  #ffdd8c */
+  --color-gold-50: #fffbf0;
+  --color-gold-100: #fff4d6;
+  --color-gold-200: #ffebb3;
+  --color-gold-300: #ffdd8c;
+  --color-gold-400: #ffd066;
+  --color-gold-500: #f0b922;
+
+  /* Coral Accent  #fb8c77 */
   --color-coral-50: #fff5f2;
-  --color-coral-100: #ffe8e0;
+  --color-coral-100: #ffe8e1;
   --color-coral-200: #ffc9b8;
-  --color-coral-300: #ffa48a;
-  --color-coral-400: #f47c5c;
-  --color-coral-500: #e05a38;
+  --color-coral-300: #fba997;
+  --color-coral-400: #fb8c77;
+  --color-coral-500: #e86b53;
 
-  /* Navy / Dark */
-  --color-navy-700: #1e3a5f;
-  --color-navy-800: #172e4a;
-  --color-navy-900: #0f1f33;
+  /* Grey background  #f9fafb */
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
 
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Thalasa', 'Poppins', Georgia, serif;
 }
 
 html {
@@ -72,7 +109,7 @@ a, button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f3f4f6;
 }
 ::-webkit-scrollbar-thumb {
   background: #94a3b8;

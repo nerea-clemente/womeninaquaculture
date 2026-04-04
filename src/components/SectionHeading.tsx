@@ -20,7 +20,7 @@ export default function SectionHeading({
           {label}
         </p>
       )}
-      <h2 className={`font-['Playfair_Display'] text-3xl sm:text-4xl font-bold leading-tight mb-4 ${dark ? 'text-white' : 'text-navy-900'}`}>
+      <h2 className={`font-['Thalasa'] text-3xl sm:text-4xl font-bold leading-tight mb-4 ${dark ? 'text-white' : 'text-navy-900'}`}>
         {title}
       </h2>
       {description && (

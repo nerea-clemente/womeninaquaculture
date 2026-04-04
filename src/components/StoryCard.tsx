@@ -32,7 +32,7 @@ export default function StoryCard({
             <span className="inline-block text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">
               {category}
             </span>
-            <h3 className="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold text-navy-900 mb-3 group-hover:text-teal-600 transition-colors">
+            <h3 className="font-['Thalasa'] text-2xl sm:text-3xl font-bold text-navy-900 mb-3 group-hover:text-teal-600 transition-colors">
               {title}
             </h3>
             <p className="text-slate-600 leading-relaxed mb-4">{excerpt}</p>

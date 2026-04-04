@@ -24,7 +24,7 @@ export default function Home() {
           <p className="text-teal-200 text-sm font-semibold tracking-wider uppercase mb-6 animate-fade-in-up">
             The Global Platform for Women in Aquaculture
           </p>
-          <h1 className="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-up animation-delay-100">
+          <h1 className="font-['Thalasa'] text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.1] mb-6 animate-fade-in-up animation-delay-100">
             Empowering Women.
             <br />
             Transforming Aquaculture.
@@ -271,7 +271,7 @@ export default function Home() {
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">
                 Programmes & Mentoring
               </p>
-              <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
+              <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
                 Grow Your Career with WiA Mentoring
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
@@ -366,7 +366,7 @@ export default function Home() {
       {/* ============ NEWSLETTER ============ */}
       <section className="py-20 bg-gradient-to-br from-teal-50 to-seafoam-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+          <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
             Stay in the Loop
           </h2>
           <p className="text-lg text-slate-600 mb-8">

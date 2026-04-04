@@ -34,7 +34,7 @@ export default function Hero({
             {subtitle}
           </p>
         )}
-        <h1 className="font-['Playfair_Display'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up animation-delay-100">
+        <h1 className="font-['Thalasa'] text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up animation-delay-100">
           {title}
         </h1>
         {description && (

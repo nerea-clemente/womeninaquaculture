@@ -31,7 +31,7 @@ export default function CTABanner({
         <div className="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white/5 blur-3xl" />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
-        <h2 className={`font-['Playfair_Display'] text-3xl sm:text-4xl font-bold ${textColor} mb-4`}>
+        <h2 className={`font-['Thalasa'] text-3xl sm:text-4xl font-bold ${textColor} mb-4`}>
           {title}
         </h2>
         <p className={`max-w-xl mx-auto text-lg ${descColor} mb-8`}>{description}</p>

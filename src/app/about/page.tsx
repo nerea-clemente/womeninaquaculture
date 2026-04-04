@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Our Mission</p>
-              <h2 className="font-['Playfair_Display'] text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="font-['Thalasa'] text-3xl font-bold text-navy-900 mb-6">
                 To support, connect and elevate women across aquaculture worldwide.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
@@ -62,7 +62,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Our Vision</p>
-              <h2 className="font-['Playfair_Display'] text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="font-['Thalasa'] text-3xl font-bold text-navy-900 mb-6">
                 A world where women lead, shape and thrive in aquaculture.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">

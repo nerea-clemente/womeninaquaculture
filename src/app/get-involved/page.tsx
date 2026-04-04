@@ -103,7 +103,7 @@ export default function GetInvolvedPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Share Your Story</p>
-            <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
               Tell Us Your Journey
             </h2>
             <p className="text-lg text-slate-600">

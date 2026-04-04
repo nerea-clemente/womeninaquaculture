@@ -30,7 +30,7 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <h2 className="font-['Playfair_Display'] text-2xl font-bold text-navy-900 mb-6">Send Us a Message</h2>
+              <h2 className="font-['Thalasa'] text-2xl font-bold text-navy-900 mb-6">Send Us a Message</h2>
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
@@ -69,7 +69,7 @@ export default function ContactPage() {
 
             {/* Sidebar */}
             <div className="lg:col-span-2">
-              <h2 className="font-['Playfair_Display'] text-2xl font-bold text-navy-900 mb-6">Contact Channels</h2>
+              <h2 className="font-['Thalasa'] text-2xl font-bold text-navy-900 mb-6">Contact Channels</h2>
               <div className="space-y-6">
                 {contactChannels.map((ch) => (
                   <div key={ch.title} className="bg-slate-50 rounded-xl p-5 border border-slate-100">

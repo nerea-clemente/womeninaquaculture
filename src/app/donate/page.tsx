@@ -34,7 +34,7 @@ export default function DonatePage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden">
             <div className="p-8 sm:p-12">
-              <h2 className="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold text-navy-900 mb-2 text-center">
+              <h2 className="font-['Thalasa'] text-2xl sm:text-3xl font-bold text-navy-900 mb-2 text-center">
                 Make a Donation
               </h2>
               <p className="text-slate-600 text-center mb-8">
@@ -149,7 +149,7 @@ export default function DonatePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Why It Matters</p>
-              <h2 className="font-['Playfair_Display'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
+              <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
                 Investing in Women is Investing in the Future
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
