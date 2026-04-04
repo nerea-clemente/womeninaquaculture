@@ -26,7 +26,7 @@ export default function ProgrammesPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Mentoring Programme</p>
-              <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 leading-tight mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-800 leading-tight mb-6">
                 One-on-One Mentoring with Industry Leaders
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
@@ -163,7 +163,7 @@ export default function ProgrammesPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Apply Now</p>
-            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Express Your Interest
             </h2>
             <p className="text-lg text-slate-600">

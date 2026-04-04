@@ -42,7 +42,7 @@ export default function Header() {
                 <path d="M6 12c1-3 3-5 6-5s5 2 6 5" />
               </svg>
             </div>
-            <span className="font-['Thalassa'] text-lg text-navy-800 leading-tight tracking-tight">
+            <span className="font-display text-lg text-navy-800 leading-tight tracking-tight">
               WiA
             </span>
           </Link>

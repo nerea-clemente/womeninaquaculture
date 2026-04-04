@@ -17,6 +17,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
+      <head>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              @font-face {
+                font-family: 'Thalassa';
+                src: url('/womeninaquaculture/fonts/Thalassa.otf') format('opentype');
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+              }
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="flex-1 pt-16 lg:pt-20">{children}</main>

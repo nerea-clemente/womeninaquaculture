@@ -24,7 +24,7 @@ export default function Home() {
         </div>
 
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center py-24">
-          <h1 className="font-['Thalassa'] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-[1.15] mb-6 animate-fade-in-up">
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-[1.15] mb-6 animate-fade-in-up">
             Empowering women.
             <br />
             <span className="underline-wave">Transforming aquaculture.</span>
@@ -55,7 +55,7 @@ export default function Home() {
           {/* Two-column header */}
           <div className="grid lg:grid-cols-2 gap-8 mb-14 items-end">
             <div>
-              <h2 className="font-['Thalassa'] text-3xl sm:text-4xl lg:text-5xl text-teal-500 leading-tight">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-teal-500 leading-tight">
                 Impact at a<br />Glance
               </h2>
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
             ].map((stat) => (
               <div key={stat.label} className="bg-white rounded-2xl border border-teal-200/60 p-8 text-center hover:border-teal-400 hover:shadow-md transition-all duration-300">
                 <p className="text-xs font-semibold tracking-wider uppercase text-navy-800 mb-4">{stat.label}</p>
-                <p className="font-['Thalassa'] text-5xl sm:text-6xl text-teal-500 mb-3">{stat.value}</p>
+                <p className="font-display text-5xl sm:text-6xl text-teal-500 mb-3">{stat.value}</p>
                 <p className="text-sm text-slate-500 leading-relaxed">{stat.desc}</p>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             {/* Content */}
             <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
-              <h3 className="font-['Thalassa'] text-3xl sm:text-4xl text-coral-400 mb-4">
+              <h3 className="font-display text-3xl sm:text-4xl text-coral-400 mb-4">
                 Meet Maria
               </h3>
               <p className="text-slate-600 leading-relaxed mb-6">
@@ -153,7 +153,7 @@ export default function Home() {
                 key={item.title}
                 className={`${item.color} border rounded-2xl p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300`}
               >
-                <h3 className="font-['Thalassa'] text-2xl text-teal-500 mb-3">{item.title}</h3>
+                <h3 className="font-display text-2xl text-teal-500 mb-3">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -200,7 +200,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-['Thalassa'] text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-6">
+              <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-6">
                 Mentorship that works
               </h2>
               <p className="text-seafoam-200 text-lg leading-relaxed mb-6">
@@ -343,7 +343,7 @@ export default function Home() {
       {/* ============ NEWSLETTER ============ */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-['Thalassa'] text-3xl sm:text-4xl text-navy-800 mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl text-navy-800 mb-4">
             Stay in the Loop
           </h2>
           <p className="text-slate-600 mb-8">

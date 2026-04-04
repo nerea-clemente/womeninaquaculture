@@ -115,7 +115,7 @@ export default function CommunityPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Join Us</p>
-            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Become a WiA Member
             </h2>
             <p className="text-lg text-slate-600">
