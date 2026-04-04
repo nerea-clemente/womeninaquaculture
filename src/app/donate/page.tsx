@@ -34,7 +34,7 @@ export default function DonatePage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-3xl shadow-lg border border-slate-100 overflow-hidden">
             <div className="p-8 sm:p-12">
-              <h2 className="font-['Thalasa'] text-2xl sm:text-3xl font-bold text-navy-900 mb-2 text-center">
+              <h2 className="font-['Thalassa'] text-2xl sm:text-3xl font-bold text-navy-800 mb-2 text-center">
                 Make a Donation
               </h2>
               <p className="text-slate-600 text-center mb-8">
@@ -72,7 +72,7 @@ export default function DonatePage() {
                     className={`py-4 rounded-xl text-lg font-bold transition-all ${
                       selectedAmount === amount
                         ? 'bg-teal-500 text-white shadow-md ring-2 ring-teal-300'
-                        : 'bg-slate-50 text-navy-900 border border-slate-200 hover:border-teal-300 hover:bg-teal-50'
+                        : 'bg-slate-50 text-navy-800 border border-slate-200 hover:border-teal-300 hover:bg-teal-50'
                     }`}
                   >
                     €{amount}
@@ -82,7 +82,7 @@ export default function DonatePage() {
 
               {/* Custom Amount */}
               <div className="mb-8">
-                <label className="block text-sm font-medium text-navy-900 mb-2">Or enter a custom amount</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Or enter a custom amount</label>
                 <div className="relative">
                   <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-semibold">€</span>
                   <input
@@ -149,7 +149,7 @@ export default function DonatePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Why It Matters</p>
-              <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
+              <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 leading-tight mb-6">
                 Investing in Women is Investing in the Future
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
@@ -160,7 +160,7 @@ export default function DonatePage() {
               </p>
             </div>
             <div className="bg-gradient-to-br from-teal-50 to-seafoam-50 rounded-3xl p-12 text-center">
-              <div className="text-5xl font-bold text-navy-900 mb-2">100%</div>
+              <div className="text-5xl font-bold text-navy-800 mb-2">100%</div>
               <p className="text-lg text-slate-600 mb-4">Purpose-Driven</p>
               <p className="text-sm text-slate-500 leading-relaxed">
                 WiA is a registered non-profit. All donations go directly to supporting our mission — community programmes, mentoring, events and platform development.

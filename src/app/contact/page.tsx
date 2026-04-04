@@ -30,20 +30,20 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <h2 className="font-['Thalasa'] text-2xl font-bold text-navy-900 mb-6">Send Us a Message</h2>
+              <h2 className="font-['Thalassa'] text-2xl font-bold text-navy-800 mb-6">Send Us a Message</h2>
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-navy-900 mb-2">Name</label>
+                    <label className="block text-sm font-medium text-navy-800 mb-2">Name</label>
                     <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-navy-900 mb-2">Email</label>
+                    <label className="block text-sm font-medium text-navy-800 mb-2">Email</label>
                     <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-navy-900 mb-2">Subject</label>
+                  <label className="block text-sm font-medium text-navy-800 mb-2">Subject</label>
                   <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-slate-600">
                     <option>General Enquiry</option>
                     <option>Partnership / Sponsorship</option>
@@ -55,7 +55,7 @@ export default function ContactPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-navy-900 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-navy-800 mb-2">Message</label>
                   <textarea rows={6} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none" placeholder="Your message..." />
                 </div>
                 <button
@@ -69,11 +69,11 @@ export default function ContactPage() {
 
             {/* Sidebar */}
             <div className="lg:col-span-2">
-              <h2 className="font-['Thalasa'] text-2xl font-bold text-navy-900 mb-6">Contact Channels</h2>
+              <h2 className="font-['Thalassa'] text-2xl font-bold text-navy-800 mb-6">Contact Channels</h2>
               <div className="space-y-6">
                 {contactChannels.map((ch) => (
                   <div key={ch.title} className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                    <h3 className="font-semibold text-navy-900 mb-1">{ch.title}</h3>
+                    <h3 className="font-semibold text-navy-800 mb-1">{ch.title}</h3>
                     <p className="text-sm text-slate-500 mb-2">{ch.desc}</p>
                     <a href={`mailto:${ch.email}`} className="text-sm font-medium text-teal-600 hover:text-teal-700 transition-colors">
                       {ch.email}
@@ -84,7 +84,7 @@ export default function ContactPage() {
 
               {/* Social */}
               <div className="mt-8 bg-teal-50 rounded-xl p-5 border border-teal-100">
-                <h3 className="font-semibold text-navy-900 mb-3">Follow Us</h3>
+                <h3 className="font-semibold text-navy-800 mb-3">Follow Us</h3>
                 <div className="flex flex-wrap gap-3">
                   {['LinkedIn', 'Instagram', 'X (Twitter)', 'YouTube'].map((social) => (
                     <a
@@ -99,7 +99,7 @@ export default function ContactPage() {
               </div>
 
               {/* Newsletter */}
-              <div className="mt-8 bg-navy-900 rounded-xl p-5 text-white">
+              <div className="mt-8 bg-navy-800 rounded-xl p-5 text-white">
                 <h3 className="font-semibold mb-2">Newsletter</h3>
                 <p className="text-sm text-slate-300 mb-4">Get the latest from WiA in your inbox.</p>
                 <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>

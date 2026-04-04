@@ -34,7 +34,7 @@ export default function Header() {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <div className="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center group-hover:bg-teal-600 transition-colors">
               <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" />
@@ -42,11 +42,9 @@ export default function Header() {
                 <path d="M6 12c1-3 3-5 6-5s5 2 6 5" />
               </svg>
             </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-semibold text-navy-900 leading-tight tracking-tight">
-                Women in Aquaculture
-              </span>
-            </div>
+            <span className="font-['Thalassa'] text-lg text-navy-800 leading-tight tracking-tight">
+              WiA
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -55,7 +53,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-600 rounded-lg hover:bg-teal-50 transition-colors"
+                className="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors"
               >
                 {item.name}
               </Link>
@@ -66,13 +64,13 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-3">
             <Link
               href="/donate"
-              className="text-sm font-medium text-teal-600 hover:text-teal-700 transition-colors"
+              className="text-sm font-medium text-teal-500 hover:text-teal-600 transition-colors"
             >
               Donate
             </Link>
             <Link
               href="/community"
-              className="inline-flex items-center px-4 py-2 text-sm font-semibold text-white bg-teal-500 rounded-full hover:bg-teal-600 transition-colors shadow-sm"
+              className="inline-flex items-center px-5 py-2 text-sm font-semibold text-white bg-teal-500 rounded-full hover:bg-teal-600 transition-colors"
             >
               Join WiA
             </Link>
@@ -81,7 +79,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             type="button"
-            className="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-600"
+            className="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-500"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle navigation menu"
           >
@@ -105,7 +103,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-600 hover:bg-teal-50 rounded-lg transition-colors"
+                  className="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 hover:bg-teal-50 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -114,7 +112,7 @@ export default function Header() {
               <hr className="my-2 border-slate-100" />
               <Link
                 href="/donate"
-                className="px-3 py-2.5 text-base font-medium text-teal-600 hover:bg-teal-50 rounded-lg transition-colors"
+                className="px-3 py-2.5 text-base font-medium text-teal-500 hover:bg-teal-50 rounded-lg transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Donate

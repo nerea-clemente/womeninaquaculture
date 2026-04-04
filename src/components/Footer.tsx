@@ -31,7 +31,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 text-white mt-auto">
+    <footer className="bg-navy-800 text-white mt-auto">
       {/* Newsletter Section */}
       <div className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">

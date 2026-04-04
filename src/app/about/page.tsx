@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Our Mission</p>
-              <h2 className="font-['Thalasa'] text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="font-['Thalassa'] text-3xl font-bold text-navy-800 mb-6">
                 To support, connect and elevate women across aquaculture worldwide.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
@@ -62,7 +62,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Our Vision</p>
-              <h2 className="font-['Thalasa'] text-3xl font-bold text-navy-900 mb-6">
+              <h2 className="font-['Thalassa'] text-3xl font-bold text-navy-800 mb-6">
                 A world where women lead, shape and thrive in aquaculture.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
@@ -88,7 +88,7 @@ export default function AboutPage() {
               { title: 'Action-Oriented', desc: 'We don\'t just talk about change. We build programmes, create platforms and forge partnerships that deliver real results for women in the sector.' },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100">
-                <h3 className="font-bold text-xl text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="font-bold text-xl text-navy-800 mb-3">{item.title}</h3>
                 <p className="text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy-900 mb-1">{val.title}</h3>
+                  <h3 className="font-semibold text-navy-800 mb-1">{val.title}</h3>
                   <p className="text-sm text-slate-600 leading-relaxed">{val.desc}</p>
                 </div>
               </div>

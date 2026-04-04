@@ -81,7 +81,7 @@ export default function GetInvolvedPage() {
             {pathways.map((item) => (
               <div key={item.title} className={`rounded-2xl p-8 border ${item.color} flex flex-col h-full`}>
                 <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="font-bold text-xl text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="font-bold text-xl text-navy-800 mb-3">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-1">{item.desc}</p>
                 <Link
                   href={item.href}
@@ -103,7 +103,7 @@ export default function GetInvolvedPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Share Your Story</p>
-            <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Tell Us Your Journey
             </h2>
             <p className="text-lg text-slate-600">
@@ -113,24 +113,24 @@ export default function GetInvolvedPage() {
           <form className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Your Name</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Your Name</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Email</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Email</label>
                 <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Country</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Country</label>
               <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Your Role in Aquaculture</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Your Role in Aquaculture</label>
               <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="e.g. Shrimp farmer, Research scientist, CEO..." />
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Your Story (Brief Summary)</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Your Story (Brief Summary)</label>
               <textarea rows={5} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none" placeholder="Tell us about your journey, challenges, achievements or what drives you in aquaculture..." />
             </div>
             <button

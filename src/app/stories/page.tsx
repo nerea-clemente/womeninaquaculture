@@ -122,7 +122,7 @@ export default function StoriesPage() {
       <section className="py-20 bg-sand-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-10">
-            <h2 className="font-['Thalasa'] text-3xl font-bold text-navy-900">All Stories</h2>
+            <h2 className="font-['Thalassa'] text-3xl font-bold text-navy-800">All Stories</h2>
             <div className="flex flex-wrap gap-2">
               {categories.map((cat) => (
                 <FilterChip

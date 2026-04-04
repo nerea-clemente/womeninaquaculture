@@ -67,7 +67,7 @@ export default function CommunityPage() {
               { role: 'Leaders & Entrepreneurs', desc: 'Women leading companies, departments and initiatives across the sector.' },
             ].map((item) => (
               <div key={item.role} className="bg-teal-50 rounded-2xl p-6 border border-teal-100">
-                <h3 className="font-semibold text-navy-900 mb-2">{item.role}</h3>
+                <h3 className="font-semibold text-navy-800 mb-2">{item.role}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -87,7 +87,7 @@ export default function CommunityPage() {
             {benefits.map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                 <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="font-bold text-lg text-navy-900 mb-2">{item.title}</h3>
+                <h3 className="font-bold text-lg text-navy-800 mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -115,7 +115,7 @@ export default function CommunityPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Join Us</p>
-            <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Become a WiA Member
             </h2>
             <p className="text-lg text-slate-600">
@@ -125,24 +125,24 @@ export default function CommunityPage() {
           <form className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">First Name</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">First Name</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="Your first name" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Last Name</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Last Name</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="Your last name" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Email</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Email</label>
               <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="you@email.com" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Country</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Country</label>
               <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="Where are you based?" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Role / Area</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Role / Area</label>
               <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent text-slate-600">
                 <option>Select your primary area</option>
                 <option>Farming / Production</option>
@@ -156,7 +156,7 @@ export default function CommunityPage() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">How did you hear about WiA?</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">How did you hear about WiA?</label>
               <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" placeholder="Conference, social media, friend..." />
             </div>
             <button

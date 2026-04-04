@@ -26,7 +26,7 @@ export default function ProgrammesPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Mentoring Programme</p>
-              <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 leading-tight mb-6">
+              <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 leading-tight mb-6">
                 One-on-One Mentoring with Industry Leaders
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
@@ -45,7 +45,7 @@ export default function ProgrammesPage() {
                   { value: '6 mo', label: 'Programme duration' },
                 ].map((stat) => (
                   <div key={stat.label}>
-                    <div className="text-2xl font-bold text-navy-900">{stat.value}</div>
+                    <div className="text-2xl font-bold text-navy-800">{stat.value}</div>
                     <p className="text-sm text-slate-500 mt-1">{stat.label}</p>
                   </div>
                 ))}
@@ -74,7 +74,7 @@ export default function ProgrammesPage() {
                 <div className="w-14 h-14 rounded-full bg-teal-500 text-white flex items-center justify-center text-lg font-bold mx-auto mb-4">
                   {item.step}
                 </div>
-                <h3 className="font-bold text-lg text-navy-900 mb-2">{item.title}</h3>
+                <h3 className="font-bold text-lg text-navy-800 mb-2">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -91,7 +91,7 @@ export default function ProgrammesPage() {
           />
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-teal-50 rounded-2xl p-8 border border-teal-100">
-              <h3 className="font-bold text-xl text-navy-900 mb-4">As a Mentee</h3>
+              <h3 className="font-bold text-xl text-navy-800 mb-4">As a Mentee</h3>
               <ul className="space-y-3">
                 {[
                   'Women working in or entering aquaculture',
@@ -110,7 +110,7 @@ export default function ProgrammesPage() {
               </ul>
             </div>
             <div className="bg-seafoam-50 rounded-2xl p-8 border border-seafoam-100">
-              <h3 className="font-bold text-xl text-navy-900 mb-4">As a Mentor</h3>
+              <h3 className="font-bold text-xl text-navy-800 mb-4">As a Mentor</h3>
               <ul className="space-y-3">
                 {[
                   'Experienced professionals in aquaculture (10+ years)',
@@ -150,7 +150,7 @@ export default function ProgrammesPage() {
                 <span className="inline-block px-3 py-1 text-xs font-semibold bg-teal-50 text-teal-600 rounded-full mb-4">
                   {item.status}
                 </span>
-                <h3 className="font-bold text-xl text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="font-bold text-xl text-navy-800 mb-3">{item.title}</h3>
                 <p className="text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -163,7 +163,7 @@ export default function ProgrammesPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Apply Now</p>
-            <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Express Your Interest
             </h2>
             <p className="text-lg text-slate-600">
@@ -173,16 +173,16 @@ export default function ProgrammesPage() {
           <form className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Full Name</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Full Name</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Email</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Email</label>
                 <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">I would like to apply as a</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">I would like to apply as a</label>
               <div className="flex gap-4">
                 <label className="flex items-center gap-2 text-sm text-slate-600">
                   <input type="radio" name="role" className="accent-teal-500" /> Mentee
@@ -193,7 +193,7 @@ export default function ProgrammesPage() {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Tell us about your goals</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Tell us about your goals</label>
               <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none" placeholder="What do you hope to gain from the programme?" />
             </div>
             <button

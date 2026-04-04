@@ -22,7 +22,7 @@ export default function DonationCard({ amount, label, description, popular = fal
         </span>
       )}
       <div className="text-center">
-        <p className="text-3xl font-bold text-navy-900 mb-1">
+        <p className="text-3xl font-bold text-navy-800 mb-1">
           €{amount}
           <span className="text-base font-normal text-slate-400">/mo</span>
         </p>

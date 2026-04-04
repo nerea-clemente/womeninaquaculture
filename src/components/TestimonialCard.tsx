@@ -19,7 +19,7 @@ export default function TestimonialCard({ quote, name, role, imageColor = 'bg-te
           </svg>
         </div>
         <div>
-          <p className="font-semibold text-navy-900 text-sm">{name}</p>
+          <p className="font-semibold text-navy-800 text-sm">{name}</p>
           <p className="text-xs text-slate-500">{role}</p>
         </div>
       </div>

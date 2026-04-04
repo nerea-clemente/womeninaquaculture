@@ -94,7 +94,7 @@ export default function PartnersPage() {
               { title: 'Community Access', desc: 'Join a vibrant partner community of organisations aligned around a shared vision for a more inclusive aquaculture industry.' },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
-                <h3 className="font-bold text-lg text-navy-900 mb-3">{item.title}</h3>
+                <h3 className="font-bold text-lg text-navy-800 mb-3">{item.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -116,7 +116,7 @@ export default function PartnersPage() {
                 <span className={`inline-block px-3 py-1 text-xs font-bold rounded-full mb-4 ${tier.badge}`}>
                   {tier.tier}
                 </span>
-                <p className="text-2xl font-bold text-navy-900 mb-6">{tier.price}</p>
+                <p className="text-2xl font-bold text-navy-800 mb-6">{tier.price}</p>
                 <ul className="space-y-3">
                   {tier.benefits.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-sm text-slate-600">
@@ -161,7 +161,7 @@ export default function PartnersPage() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-sm font-semibold tracking-wider uppercase text-teal-500 mb-3">Get Started</p>
-            <h2 className="font-['Thalasa'] text-3xl sm:text-4xl font-bold text-navy-900 mb-4">
+            <h2 className="font-['Thalassa'] text-3xl sm:text-4xl font-bold text-navy-800 mb-4">
               Become a Partner
             </h2>
             <p className="text-lg text-slate-600">
@@ -171,20 +171,20 @@ export default function PartnersPage() {
           <form className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 space-y-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Your Name</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Your Name</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-navy-900 mb-2">Organisation</label>
+                <label className="block text-sm font-medium text-navy-800 mb-2">Organisation</label>
                 <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Email</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Email</label>
               <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-navy-900 mb-2">Message</label>
+              <label className="block text-sm font-medium text-navy-800 mb-2">Message</label>
               <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent resize-none" placeholder="Tell us about your interest in partnering with WiA..." />
             </div>
             <button

@@ -62,7 +62,7 @@ export default function ResourcesPage() {
                     {resource.format}
                   </span>
                 </div>
-                <h3 className="font-semibold text-lg text-navy-900 mb-2 leading-snug">{resource.title}</h3>
+                <h3 className="font-semibold text-lg text-navy-800 mb-2 leading-snug">{resource.title}</h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{resource.desc}</p>
                 <button className="inline-flex items-center text-sm font-semibold text-teal-600 hover:text-teal-700 transition-colors">
                   {resource.format === 'Video' ? 'Watch Now' : 'Download'}
