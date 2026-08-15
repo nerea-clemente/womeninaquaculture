@@ -6,6 +6,7 @@
 <title>Partners — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
+<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -17,117 +18,131 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 }}}}
 </script>
 </head>
-<body class="min-h-full flex flex-col">
-<header class="site-header" id="site-header">
+<body class="min-h-full flex flex-col" style="background-color:#fcf8f2">
+
+<header class="site-header fixed top-0 left-0 right-0 z-50" style="background-color:#fcf8f2" id="site-header">
 <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="flex h-16 lg:h-20 items-center justify-between">
-<a href="./index.html" class="flex items-center gap-2.5 group">
-<div class="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center group-hover:bg-teal-600 transition-colors">
-<svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M6 12c1-3 3-5 6-5s5 2 6 5"/></svg>
-</div>
-<span class="font-display text-lg" style="color:#234e52">WiA</span>
+<div class="flex h-16 items-center justify-between">
+<a href="./index.html" class="flex items-center group">
+<span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span>
 </a>
 <div class="hidden lg:flex items-center gap-1">
-<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">About</a>
-<a href="./community.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Community</a>
-<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Stories</a>
-<a href="./events.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Events</a>
-<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Programmes</a>
-<a href="./partners.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Partners</a>
-<a href="./get-involved.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Get Involved</a>
+<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">About us</a>
+<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Stories</a>
+<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Resources</a>
+<a href="./community.html" class="px-4 py-2 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Join us!</a>
 </div>
-<div class="hidden lg:flex items-center gap-3">
-<a href="./donate.html" class="text-sm font-medium text-teal-500 hover:text-teal-600">Donate</a>
-<a href="./community.html" class="btn-primary">Join WiA</a>
-</div>
-<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-500" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
 <div class="mobile-menu lg:hidden border-t border-slate-100 py-4" id="mobile-menu">
 <div class="flex flex-col gap-1">
-<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About</a>
-<a href="./community.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Community</a>
+<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About us</a>
 <a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Stories</a>
-<a href="./events.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Events</a>
-<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Programmes</a>
-<a href="./partners.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Partners</a>
-<a href="./get-involved.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Get Involved</a>
+<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Resources</a>
 <hr class="my-2 border-slate-100">
-<a href="./donate.html" class="px-3 py-2.5 text-base font-medium text-teal-500">Donate</a>
-<a href="./community.html" class="mt-2 btn-primary justify-center">Join WiA</a>
+<a href="./community.html" class="mt-2 px-4 py-2.5 text-base font-semibold text-white rounded-full text-center" style="background-color:#fb8c77">Join us!</a>
 </div>
 </div>
 </nav>
 </header>
-<main class="flex-1 pt-16 lg:pt-20">
-<section class="relative overflow-hidden bg-gradient-to-br from-teal-600 via-teal-500 to-teal-700 py-24 lg:py-36">
-<div class="absolute inset-0"><div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-white/5 blur-3xl"></div></div>
-<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-seafoam-200 text-sm font-semibold tracking-wider uppercase mb-4">Partners</p>
-<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">Together We Go Further</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80 leading-relaxed">Industry partnerships that drive meaningful change for women in aquaculture.</p>
+
+<main class="flex-1 pt-16">
+
+<section class="py-20 lg:py-28" style="background-color:#1b7e82">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Partners</h1>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Together we go further</p>
 </div>
 </section>
 
-<section class="py-20 bg-sand-50">
+<section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Why Partner with WiA?</h2></div>
+<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Why Partner with WiA?</h2></div>
 <div class="grid sm:grid-cols-3 gap-6">
-<div class="bg-white rounded-2xl border border-teal-200/60 p-8 card-hover"><h3 class="font-display text-2xl text-teal-500 mb-3">Brand Alignment</h3><p class="text-sm text-slate-600 leading-relaxed">Associate your brand with equity, sustainability and the future of aquaculture.</p></div>
-<div class="bg-white rounded-2xl border border-coral-200/60 p-8 card-hover"><h3 class="font-display text-2xl text-teal-500 mb-3">Talent Pipeline</h3><p class="text-sm text-slate-600 leading-relaxed">Connect with skilled, passionate women entering the aquaculture industry.</p></div>
-<div class="bg-white rounded-2xl border border-seafoam-200 p-8 card-hover"><h3 class="font-display text-2xl text-teal-500 mb-3">Industry Impact</h3><p class="text-sm text-slate-600 leading-relaxed">Drive meaningful change and support programmes that make a difference.</p></div>
+<div class="rounded-2xl border-2 p-8" style="background-color:#ffffff; border-color:#81cebe"><h3 class="font-display text-2xl mb-3" style="color:#1b7e82">Brand Alignment</h3><p class="text-sm text-slate-600 leading-relaxed">Associate your brand with equity, sustainability and the future of aquaculture.</p></div>
+<div class="rounded-2xl border-2 p-8" style="background-color:#ffffff; border-color:#fb8c77"><h3 class="font-display text-2xl mb-3" style="color:#1b7e82">Talent Pipeline</h3><p class="text-sm text-slate-600 leading-relaxed">Connect with skilled, passionate women entering the aquaculture industry.</p></div>
+<div class="rounded-2xl border-2 p-8" style="background-color:#ffffff; border-color:#ffdd8c"><h3 class="font-display text-2xl mb-3" style="color:#1b7e82">Industry Impact</h3><p class="text-sm text-slate-600 leading-relaxed">Drive meaningful change and support programmes that make a difference.</p></div>
 </div>
 </div>
 </section>
-<section class="py-20 bg-white">
+
+<section class="py-20" style="background-color:#ffffff">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Our Partners</h2></div>
+<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Our Partners</h2></div>
 <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
-<span class="text-lg font-semibold text-slate-300 tracking-wide">AquaCorp</span>
-<span class="text-lg font-semibold text-slate-300 tracking-wide">NordicFeed</span>
-<span class="text-lg font-semibold text-slate-300 tracking-wide">OceanTech</span>
-<span class="text-lg font-semibold text-slate-300 tracking-wide">BluHarvest</span>
-<span class="text-lg font-semibold text-slate-300 tracking-wide">SeaVentures</span>
-<span class="text-lg font-semibold text-slate-300 tracking-wide">MarinePro</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">AquaCorp</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">NordicFeed</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">OceanTech</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">BluHarvest</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">SeaVentures</span>
+<span class="text-lg font-semibold tracking-wide" style="color:#81cebe">MarinePro</span>
 </div>
 </div>
 </section>
-<section class="py-20 bg-sand-50">
+
+<section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Partnership Tiers</h2></div>
+<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Partnership Tiers</h2></div>
 <div class="grid sm:grid-cols-3 gap-6">
-<div class="bg-white rounded-2xl border border-slate-200 p-8 text-center card-hover"><h3 class="font-display text-2xl text-teal-500 mb-2">Bronze</h3><p class="text-3xl font-bold text-navy-800 mb-4">$2,500<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Logo on website</li><li>Newsletter mention</li><li>Event tickets (2)</li></ul><a href="./contact.html" class="btn-primary w-full justify-center">Get in Touch</a></div>
-<div class="bg-white rounded-2xl border-2 border-teal-500 p-8 text-center card-hover"><h3 class="font-display text-2xl text-teal-500 mb-2">Silver</h3><p class="text-3xl font-bold text-navy-800 mb-4">$5,000<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Featured partner</li><li>Co-branded events</li><li>Event tickets (5)</li><li>Talent access</li></ul><a href="./contact.html" class="btn-primary w-full justify-center">Get in Touch</a></div>
-<div class="bg-white rounded-2xl border border-slate-200 p-8 text-center card-hover"><h3 class="font-display text-2xl text-teal-500 mb-2">Gold</h3><p class="text-3xl font-bold text-navy-800 mb-4">$10,000<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Headline partner</li><li>Speaking opportunities</li><li>Unlimited event access</li><li>Custom programmes</li></ul><a href="./contact.html" class="btn-primary w-full justify-center">Get in Touch</a></div>
+<div class="rounded-2xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#81cebe"><h3 class="font-display text-2xl mb-2" style="color:#1b7e82">Bronze</h3><p class="text-3xl font-bold mb-4" style="color:#234e52">$2,500<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Logo on website</li><li>Newsletter mention</li><li>Event tickets (2)</li></ul><a href="./contact.html" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Get in Touch</a></div>
+<div class="rounded-2xl border-2 p-8 text-center ring-2" style="background-color:#ffffff; border-color:#1b7e82; --tw-ring-color:#81cebe"><h3 class="font-display text-2xl mb-2" style="color:#1b7e82">Silver</h3><p class="text-3xl font-bold mb-4" style="color:#234e52">$5,000<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Featured partner</li><li>Co-branded events</li><li>Event tickets (5)</li><li>Talent access</li></ul><a href="./contact.html" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Get in Touch</a></div>
+<div class="rounded-2xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#81cebe"><h3 class="font-display text-2xl mb-2" style="color:#1b7e82">Gold</h3><p class="text-3xl font-bold mb-4" style="color:#234e52">$10,000<span class="text-sm font-normal text-slate-500">/yr</span></p><ul class="text-sm text-slate-600 space-y-2 mb-6"><li>Headline partner</li><li>Speaking opportunities</li><li>Unlimited event access</li><li>Custom programmes</li></ul><a href="./contact.html" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Get in Touch</a></div>
 </div>
 </div>
 </section>
-<section class="bg-gradient-to-br from-teal-500 to-teal-700 relative overflow-hidden">
-<div class="absolute inset-0"><div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div></div>
-<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+
+<section class="py-16 lg:py-20" style="background-color:#1b7e82">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 <h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
 <p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="btn-white shadow-lg">Join WiA</a>
-<a href="./contact.html" class="btn-outline">Contact Us</a>
+<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
+<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
 </div>
 </div>
 </section>
+
 </main>
-<footer class="bg-navy-800 text-white">
+
+<footer style="background-color:#234e52" class="text-white">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="col-span-2 md:col-span-1">
-<div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center"><svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div><span class="font-display text-lg">WiA</span></div>
+<span class="font-display text-lg text-white mb-4 block">Women in Aquaculture</span>
 <p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
 </div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4><ul class="space-y-2 text-sm text-slate-400"><li><a href="./about.html" class="hover:text-seafoam-300">About</a></li><li><a href="./stories.html" class="hover:text-seafoam-300">Stories</a></li><li><a href="./events.html" class="hover:text-seafoam-300">Events</a></li><li><a href="./programmes.html" class="hover:text-seafoam-300">Programmes</a></li><li><a href="./resources.html" class="hover:text-seafoam-300">Resources</a></li></ul></div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4><ul class="space-y-2 text-sm text-slate-400"><li><a href="./community.html" class="hover:text-seafoam-300">Join Community</a></li><li><a href="./partners.html" class="hover:text-seafoam-300">Become a Partner</a></li><li><a href="./donate.html" class="hover:text-seafoam-300">Donate</a></li><li><a href="./contact.html" class="hover:text-seafoam-300">Contact</a></li></ul></div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Connect</h4><p class="text-sm text-slate-400">hello@womeninaquaculture.org</p></div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./about.html" class="hover:text-[#81cebe] transition-colors">About us</a></li>
+<li><a href="./stories.html" class="hover:text-[#81cebe] transition-colors">Stories</a></li>
+<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Mentorship</a></li>
+<li><a href="./resources.html" class="hover:text-[#81cebe] transition-colors">Resources</a></li>
+</ul>
 </div>
-<div class="border-t border-white/10 mt-12 pt-8 text-center"><p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p></div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./community.html" class="hover:text-[#81cebe] transition-colors">Join us!</a></li>
+<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Become a Mentor</a></li>
+<li><a href="./donate.html" class="hover:text-[#81cebe] transition-colors">Donate</a></li>
+<li><a href="./contact.html" class="hover:text-[#81cebe] transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Connect</h4>
+<p class="text-sm text-slate-400">hello@womeninaquaculture.org</p>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center">
+<p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p>
+</div>
 </div>
 </footer>
 <script>window.addEventListener("scroll",function(){document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>20)});</script>
+
 </body></html>
