@@ -6,7 +6,17 @@
 <title>Contact — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }</style>
+<style>
+.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+.btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral:hover { background:#e86b53; }
+.btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-teal:hover { background:#176d70; }
+.btn-gold { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#ffdd8c; color:#234e52; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-gold:hover { background:#ffd066; }
+.btn-coral-outline { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; border:2px solid #fb8c77; color:#fb8c77; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -52,41 +62,152 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 
 <main class="flex-1 pt-16">
 
+<!-- 1. Hero -->
 <section class="py-20 lg:py-28" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Contact</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80">Get in touch</p>
+<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Get in Touch</h1>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Questions, ideas, or partnership enquiries — we'd love to hear from you</p>
 </div>
 </section>
 
+<!-- 2. Contact Methods -->
 <section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-2 gap-12">
-<div>
-<h2 class="font-display text-2xl mb-6" style="color:#234e52">Contact Information</h2>
-<div class="space-y-4 mb-8">
-<div class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><div><p class="font-semibold" style="color:#234e52">Email</p><p class="text-sm text-slate-600">hello@womeninaquaculture.org</p></div></div>
-<div class="flex items-start gap-3"><svg class="w-5 h-5 mt-0.5" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><div><p class="font-semibold" style="color:#234e52">Location</p><p class="text-sm text-slate-600">Global / HQ in Bergen, Norway</p></div></div>
+<div class="grid md:grid-cols-3 gap-6">
+<!-- Email Card -->
+<div class="rounded-3xl border-2 p-6 text-center" style="background-color:#ffffff; border-color:#81cebe">
+<div class="flex items-center justify-center w-14 h-14 rounded-full mx-auto mb-4" style="background-color:#eefbfb">
+<svg class="w-7 h-7" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
 </div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Email</h3>
+<p class="font-medium mb-1" style="color:#1b7e82">hello@womeninaquaculture.org</p>
+<p class="text-sm text-slate-500">We typically respond within 48 hours</p>
 </div>
-<form class="rounded-2xl border-2 p-8" style="background-color:#ffffff; border-color:#81cebe" onsubmit="event.preventDefault()">
-<input type="text" placeholder="Your name" class="w-full mb-3 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#fcf8f2">
-<input type="email" placeholder="Your email" class="w-full mb-3 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#fcf8f2">
-<select class="w-full mb-3 px-4 py-3 rounded-lg border-2 text-sm text-slate-600 focus:outline-none" style="border-color:#81cebe; background-color:#fcf8f2"><option>Select a topic</option><option>Membership</option><option>Partnerships</option><option>Events</option><option>Media</option><option>Other</option></select>
-<textarea placeholder="Your message..." rows="5" class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none resize-none" style="border-color:#81cebe; background-color:#fcf8f2"></textarea>
-<button type="submit" class="w-full px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Send Message</button>
-</form>
+<!-- Location Card -->
+<div class="rounded-3xl border-2 p-6 text-center" style="background-color:#ffffff; border-color:#81cebe">
+<div class="flex items-center justify-center w-14 h-14 rounded-full mx-auto mb-4" style="background-color:#eefbfb">
+<svg class="w-7 h-7" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Location</h3>
+<p class="font-medium mb-1" style="color:#1b7e82">Global / HQ in Bergen, Norway</p>
+<p class="text-sm text-slate-500">Mon–Fri, 9:00–17:00 CET</p>
+</div>
+<!-- Social Card -->
+<div class="rounded-3xl border-2 p-6 text-center" style="background-color:#ffffff; border-color:#81cebe">
+<div class="flex items-center justify-center w-14 h-14 rounded-full mx-auto mb-4" style="background-color:#eefbfb">
+<svg class="w-7 h-7" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Social</h3>
+<div class="flex items-center justify-center gap-4 mb-2">
+<!-- LinkedIn -->
+<a href="#" style="color:#1b7e82" class="hover:opacity-70 transition-opacity" aria-label="LinkedIn">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<!-- Instagram -->
+<a href="#" style="color:#1b7e82" class="hover:opacity-70 transition-opacity" aria-label="Instagram">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+</a>
+<!-- Twitter/X -->
+<a href="#" style="color:#1b7e82" class="hover:opacity-70 transition-opacity" aria-label="Twitter / X">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+</div>
+<p class="text-sm text-slate-500">Follow us for updates</p>
+</div>
 </div>
 </div>
 </section>
 
-<section class="py-16 lg:py-20" style="background-color:#1b7e82">
+<!-- 3. Contact Form -->
+<section class="py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-8">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Send Us a Message</h2>
+<p class="text-slate-600">Fill out the form below and we'll get back to you as soon as possible.</p>
+</div>
+<form class="rounded-3xl border-2 p-8" style="background-color:#fcf8f2; border-color:#81cebe" onsubmit="event.preventDefault()">
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Name</label>
+<input type="text" placeholder="Your name" class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Email</label>
+<input type="email" placeholder="Your email" class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Subject</label>
+<select class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm text-slate-600 focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
+<option>Select a topic</option>
+<option>General</option>
+<option>Membership</option>
+<option>Partnerships</option>
+<option>Events</option>
+<option>Media</option>
+<option>Mentoring</option>
+<option>Other</option>
+</select>
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Message</label>
+<textarea placeholder="Your message..." rows="5" class="w-full mb-6 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none resize-none" style="border-color:#81cebe; background-color:#ffffff"></textarea>
+<button type="submit" class="btn-coral w-full justify-center py-3">Send Message</button>
+</form>
+</div>
+</section>
+
+<!-- 4. Quick Links -->
+<section class="py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Looking for Something Specific?</h2>
+<p class="text-slate-600">Quick links to help you find what you need.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<a href="./community.html" class="rounded-3xl border-2 p-6 text-center group hover:shadow-lg transition-shadow" style="background-color:#ffffff; border-color:#81cebe">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mx-auto mb-4" style="background-color:#f0fbf8">
+<svg class="w-6 h-6" style="color:#3d9d8a" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+</div>
+<h3 class="font-semibold mb-1" style="color:#234e52">Join the Community</h3>
+<p class="text-sm text-slate-500">Connect with women in aquaculture worldwide</p>
+</a>
+<a href="./partners.html" class="rounded-3xl border-2 p-6 text-center group hover:shadow-lg transition-shadow" style="background-color:#ffffff; border-color:#fb8c77">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mx-auto mb-4" style="background-color:#fff5f2">
+<svg class="w-6 h-6" style="color:#fb8c77" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+</div>
+<h3 class="font-semibold mb-1" style="color:#234e52">Become a Partner</h3>
+<p class="text-sm text-slate-500">Explore corporate partnership opportunities</p>
+</a>
+<a href="./faq.html" class="rounded-3xl border-2 p-6 text-center group hover:shadow-lg transition-shadow" style="background-color:#ffffff; border-color:#ffdd8c">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mx-auto mb-4" style="background-color:#fffbf0">
+<svg class="w-6 h-6" style="color:#f0b922" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/></svg>
+</div>
+<h3 class="font-semibold mb-1" style="color:#234e52">FAQs</h3>
+<p class="text-sm text-slate-500">Find answers to common questions</p>
+</a>
+<a href="./resources.html" class="rounded-3xl border-2 p-6 text-center group hover:shadow-lg transition-shadow" style="background-color:#ffffff; border-color:#1b7e82">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mx-auto mb-4" style="background-color:#eefbfb">
+<svg class="w-6 h-6" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+</div>
+<h3 class="font-semibold mb-1" style="color:#234e52">Resources</h3>
+<p class="text-sm text-slate-500">Browse reports, guides, and toolkits</p>
+</a>
+</div>
+</div>
+</section>
+
+<!-- 5. Newsletter -->
+<section class="py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Stay Connected</h2>
+<p class="text-slate-600 mb-8">Subscribe to our newsletter for the latest news, events, and stories from Women in Aquaculture.</p>
+<form class="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto" onsubmit="event.preventDefault()">
+<input type="email" placeholder="Your email address" class="flex-1 w-full px-4 py-3 rounded-full border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#fcf8f2">
+<button type="submit" class="btn-coral px-8 py-3 whitespace-nowrap">Subscribe</button>
+</form>
+</div>
+</section>
+
+<!-- 6. CTA -->
+<section class="py-16 lg:py-20" style="background-color:#234e52">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
-<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
+<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Women in Aquaculture</h2>
+<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement empowering women across the aquaculture industry.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
-<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
+<a href="./community.html" class="btn-gold px-8 py-3">Join Us</a>
+<a href="./about.html" class="btn-coral-outline px-8 py-3" style="border-color:rgba(255,255,255,0.3); color:#ffffff;">Learn More</a>
 </div>
 </div>
 </section>
