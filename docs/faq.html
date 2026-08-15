@@ -6,8 +6,19 @@
 <title>FAQ — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
-.faq-open .faq-answer{display:block!important}.faq-open .faq-chevron{transform:rotate(180deg)}</style>
+<style>
+.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+.faq-open .faq-answer{display:block!important}
+.faq-open .faq-chevron{transform:rotate(180deg)}
+.btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral:hover { background:#e86b53; }
+.btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-teal:hover { background:#176d70; }
+.btn-gold { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#ffdd8c; color:#234e52; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-gold:hover { background:#ffd066; }
+.btn-coral-outline { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; border:2px solid #fb8c77; color:#fb8c77; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -53,41 +64,225 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 
 <main class="flex-1 pt-16">
 
+<!-- 1. Hero -->
 <section class="py-20 lg:py-28" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">FAQ</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80">Frequently asked questions</p>
+<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Frequently Asked Questions</h1>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Everything you need to know about Women in Aquaculture</p>
 </div>
 </section>
 
+<!-- 2. General FAQs (About WiA) -->
 <section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-<div class="space-y-3" id="faq-list">
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">What is Women in Aquaculture (WiA)?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">WiA is a global non-profit platform connecting, supporting and celebrating women across the aquaculture industry — from farming and research to leadership and entrepreneurship.</p></div></div>
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">Who can join WiA?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Anyone who supports women in aquaculture can join — women, men and organisations are all welcome. Our membership tiers include Student (free), Professional and Organisation levels.</p></div></div>
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">How much does membership cost?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Student membership is free. Professional membership is $50/year and Organisation membership is $500/year. All tiers include community access.</p></div></div>
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">What is the mentoring programme?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Our 6-month programme pairs early-career women with experienced industry leaders for one-on-one guidance, career advice and professional development.</p></div></div>
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">How can I share my story?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Visit our <a href="./get-involved.html#share-story" class="hover:underline" style="color:#1b7e82">Get Involved page</a> and fill out the story submission form. We review all submissions and feature stories across our platform.</p></div></div>
-<div class="rounded-xl border-2 overflow-hidden" style="background-color:#ffffff; border-color:#81cebe"><button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left"><span class="font-semibold" style="color:#234e52">How can my company become a partner?</span><svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Visit our <a href="./partners.html" class="hover:underline" style="color:#1b7e82">Partners page</a> to learn about partnership tiers, or <a href="./contact.html" class="hover:underline" style="color:#1b7e82">contact us</a> directly to discuss a custom arrangement.</p></div></div>
+<h2 class="font-display text-2xl mb-6" style="color:#234e52">About WiA</h2>
+<div class="space-y-3">
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">What is Women in Aquaculture?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Women in Aquaculture (WiA) is a global non-profit platform dedicated to connecting, supporting, and celebrating women across the aquaculture industry. We work to increase the visibility of women in aquaculture, provide mentoring and professional development opportunities, and build a supportive community that spans farming, research, leadership, entrepreneurship, and policy.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Who can join WiA?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Anyone who supports women in aquaculture is welcome to join. Our community includes women working in all areas of the aquaculture sector, as well as men and organisations who are committed to advancing gender equity in the industry. We offer membership tiers for students, professionals, and organisations.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Where is WiA based?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">WiA is a global organisation with its headquarters in Bergen, Norway. Our community spans six continents, and we operate primarily online to ensure accessibility for members everywhere. We also host in-person events and regional meet-ups when possible.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How is WiA funded?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">WiA is funded through a combination of membership fees, corporate partnerships, individual donations, and grants. We are committed to financial transparency and publish annual impact reports detailing how funds are allocated across our programmes, community initiatives, and operations.</p></div>
+</div>
+
 </div>
 </div>
 </section>
 
+<!-- 3. Membership FAQs -->
+<section class="py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-2xl mb-6" style="color:#234e52">Membership</h2>
+<div class="space-y-3">
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How much does membership cost?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Student membership is completely free. Professional membership is $50 per year, and Organisation membership is $500 per year. All tiers include access to the community platform, events, and resources.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">What's included in each membership tier?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed"><strong>Student (Free):</strong> Community access, event invitations, resource library, and newsletter.<br><strong>Professional ($50/yr):</strong> Everything in Student plus mentoring programme access, priority event registration, and a member profile in our directory.<br><strong>Organisation ($500/yr):</strong> Everything in Professional plus brand visibility on our platform, multiple team seats, speaking and sponsorship opportunities, and a partnership badge.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Can my organisation join?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Absolutely! We welcome companies, research institutions, NGOs, and government agencies. Our Organisation membership tier provides team access, visibility on our platform, and opportunities to support women in aquaculture directly. For tailored partnership packages, please <a href="./contact.html" class="hover:underline" style="color:#1b7e82">contact us</a>.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How do I cancel my membership?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">You can cancel your membership at any time by logging into your account and visiting your membership settings, or by emailing us at <span style="color:#1b7e82">hello@womeninaquaculture.org</span>. If you cancel a paid membership, you'll retain access until the end of your current billing period. No refunds are issued for partial periods.</p></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- 4. Mentoring FAQs -->
+<section class="py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-2xl mb-6" style="color:#234e52">Mentoring Programme</h2>
+<div class="space-y-3">
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">What is the mentoring programme?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Our mentoring programme is a structured 6-month experience that pairs early-career women with experienced industry leaders. Participants receive one-on-one guidance, career advice, goal-setting support, and access to an expanded professional network. The programme runs in cohorts, with new intakes typically opening twice per year.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How are mentor-mentee pairs matched?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">We match mentors and mentees based on career goals, areas of expertise, geographic region, and personal preferences submitted during the application process. Our team reviews each application carefully to ensure strong alignment. If a pairing isn't working out, we offer the option to rematch during the programme.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How much time does mentoring require?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">We recommend a minimum of one hour per month for scheduled mentor-mentee sessions, plus occasional informal check-ins. Most pairs meet for 1-2 hours monthly via video call. The programme also includes optional group workshops and networking events that typically last 60-90 minutes each.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Can I be both a mentor and a mentee?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Yes! We believe that everyone has something to learn and something to teach. Mid-career professionals often benefit from being mentored by a senior leader while simultaneously mentoring someone earlier in their career. You can apply for both roles in the same cohort or in different cycles.</p></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- 5. Events & Resources FAQs -->
+<section class="py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-2xl mb-6" style="color:#234e52">Events &amp; Resources</h2>
+<div class="space-y-3">
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Do you host in-person events?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Yes! We host in-person events at major aquaculture conferences and through regional meet-ups organised by our community leaders. We also run an annual gathering that brings together members from around the world. Most of our regular programming — webinars, workshops, and networking sessions — takes place online to maximise accessibility.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Are webinar replays available?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Yes, all webinar recordings are available in our resource library for members. Replays are typically posted within 48 hours of the live event. Some recordings may also be shared publicly on our social media channels. Professional and Organisation members get access to the full archive.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How can I access the resource library?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Our <a href="./resources.html" class="hover:underline" style="color:#1b7e82">resource library</a> is available to all members. It includes reports, toolkits, career guides, webinar recordings, and industry research. Some resources are available to the public, while premium content is reserved for Professional and Organisation members.</p></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- 6. Getting Involved FAQs -->
+<section class="py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-2xl mb-6" style="color:#234e52">Getting Involved</h2>
+<div class="space-y-3">
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How can I share my story?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">We love hearing from women in aquaculture! Visit our <a href="./stories.html" class="hover:underline" style="color:#1b7e82">Stories page</a> or <a href="./contact.html" class="hover:underline" style="color:#1b7e82">contact us</a> to submit your story. We review all submissions and feature stories across our website, newsletter, and social media. Stories can be written profiles, video interviews, or short Q&amp;A features — whatever format feels most comfortable for you.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">How can my company become a partner?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Visit our <a href="./partners.html" class="hover:underline" style="color:#1b7e82">Partners page</a> to learn about our partnership tiers and benefits, or <a href="./contact.html" class="hover:underline" style="color:#1b7e82">contact us</a> directly to discuss a custom arrangement. We work with companies of all sizes — from startups to multinationals — and offer flexible packages that align with your organisation's goals and budget.</p></div>
+</div>
+
+<div class="rounded-xl border overflow-hidden" style="background-color:#ffffff; border-color:#e2e8f0">
+<button onclick="this.parentElement.classList.toggle('faq-open')" class="w-full flex items-center justify-between p-5 text-left">
+<span class="font-semibold" style="color:#234e52">Can I volunteer with WiA?</span>
+<svg class="w-5 h-5 text-slate-400 faq-chevron transition-transform flex-shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+</button>
+<div class="faq-answer px-5 pb-5 hidden"><p class="text-sm text-slate-600 leading-relaxed">Yes! We rely on volunteers for event support, content creation, translations, regional community building, and more. If you'd like to contribute your time and skills, please <a href="./contact.html" class="hover:underline" style="color:#1b7e82">get in touch</a> and let us know your areas of interest. We'll match you with opportunities that fit your availability and expertise.</p></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- 7. Still Have Questions? -->
 <section class="py-16" style="background-color:#ffffff">
 <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
 <h2 class="font-display text-2xl mb-4" style="color:#234e52">Still Have Questions?</h2>
 <p class="text-slate-600 mb-6">Can't find what you're looking for? We're happy to help.</p>
-<a href="./contact.html" class="inline-block px-8 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Contact Us</a>
+<a href="./contact.html" class="btn-coral px-8 py-3">Contact Us</a>
 </div>
 </section>
 
+<!-- 8. CTA -->
 <section class="py-16 lg:py-20" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 <h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
 <p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
-<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
+<a href="./community.html" class="btn-gold px-8 py-3">Join Us</a>
+<a href="./about.html" class="btn-coral-outline px-8 py-3" style="border-color:rgba(255,255,255,0.3); color:#ffffff;">Learn More</a>
 </div>
 </div>
 </section>
