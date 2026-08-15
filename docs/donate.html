@@ -6,7 +6,19 @@
 <title>Donate — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }</style>
+<style>
+.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+.btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral:hover { background:#e86b53; }
+.btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-teal:hover { background:#176d70; }
+.btn-gold { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#ffdd8c; color:#234e52; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-gold:hover { background:#ffd066; }
+.btn-coral-outline { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; border:2px solid #fb8c77; color:#fb8c77; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+.amount-btn { cursor:pointer; }
+.amount-btn.active { background-color:#1b7e82 !important; border-color:#1b7e82 !important; color:#ffffff !important; }
+</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -52,48 +64,156 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 
 <main class="flex-1 pt-16">
 
+<!-- 1. Hero -->
 <section class="py-20 lg:py-28" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Donate</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80">Invest in women, transform aquaculture</p>
+<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Support Women in Aquaculture</h1>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Your donation funds mentoring, events, and community building for women worldwide</p>
 </div>
 </section>
 
+<!-- 2. Impact Numbers -->
 <section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Your Donation Makes a Difference</h2></div>
-<div class="grid sm:grid-cols-3 gap-6">
-<div class="rounded-2xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#81cebe"><p class="font-display text-4xl mb-3" style="color:#1b7e82">$25</p><p class="text-sm text-slate-600">Funds a mentoring session for one woman.</p></div>
-<div class="rounded-2xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#fb8c77"><p class="font-display text-4xl mb-3" style="color:#1b7e82">$100</p><p class="text-sm text-slate-600">Sponsors a woman's attendance at a WiA event.</p></div>
-<div class="rounded-2xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#ffdd8c"><p class="font-display text-4xl mb-3" style="color:#1b7e82">$500</p><p class="text-sm text-slate-600">Funds a full 6-month mentoring programme for one woman.</p></div>
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Your Donation Makes a Difference</h2>
+<p class="text-slate-600 max-w-2xl mx-auto">Every contribution, no matter the size, helps us empower women in aquaculture around the world.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#1b7e82">
+<p class="font-display text-4xl mb-3" style="color:#1b7e82">$25</p>
+<p class="text-sm text-slate-600 leading-relaxed">Funds a one-hour mentoring session</p>
+</div>
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#81cebe">
+<p class="font-display text-4xl mb-3" style="color:#1b7e82">$50</p>
+<p class="text-sm text-slate-600 leading-relaxed">Provides a resource toolkit for one woman</p>
+</div>
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#fb8c77">
+<p class="font-display text-4xl mb-3" style="color:#1b7e82">$100</p>
+<p class="text-sm text-slate-600 leading-relaxed">Sponsors a woman's conference attendance</p>
+</div>
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#ffdd8c">
+<p class="font-display text-4xl mb-3" style="color:#1b7e82">$500</p>
+<p class="text-sm text-slate-600 leading-relaxed">Funds a full 6-month mentoring programme</p>
+</div>
 </div>
 </div>
 </section>
 
+<!-- 3. Donation Form -->
 <section class="py-20" style="background-color:#ffffff">
 <div class="mx-auto max-w-lg px-4 sm:px-6 lg:px-8">
-<div class="rounded-2xl border-2 p-8" style="background-color:#fcf8f2; border-color:#81cebe">
+<div class="rounded-3xl border-2 p-8" style="background-color:#fcf8f2; border-color:#81cebe">
 <h3 class="font-display text-2xl mb-6 text-center" style="color:#234e52">Make a Donation</h3>
-<div class="grid grid-cols-4 gap-2 mb-6">
-<button class="py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52">$25</button>
-<button class="py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52">$50</button>
-<button class="py-2.5 rounded-lg border-2 text-sm font-semibold" style="border-color:#1b7e82; background-color:#1b7e82; color:#ffffff">$100</button>
-<button class="py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52">$250</button>
+<div class="grid grid-cols-5 gap-2 mb-6">
+<button class="amount-btn py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$25</button>
+<button class="amount-btn py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$50</button>
+<button class="amount-btn active py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$100</button>
+<button class="amount-btn py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">$250</button>
+<button class="amount-btn py-2.5 rounded-lg border-2 text-sm font-semibold transition-colors" style="border-color:#81cebe; color:#234e52" onclick="document.querySelectorAll('.amount-btn').forEach(b=>b.classList.remove('active'));this.classList.add('active')">Custom</button>
 </div>
-<input type="text" placeholder="Your name" class="w-full mb-3 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Name</label>
+<input type="text" placeholder="Your name" class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Email</label>
 <input type="email" placeholder="Your email" class="w-full mb-4 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#ffffff">
-<button class="w-full px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Donate Now</button>
+<label class="block text-sm font-medium mb-1" style="color:#234e52">Message <span class="text-slate-400 font-normal">(optional)</span></label>
+<textarea placeholder="Leave a message of support..." rows="3" class="w-full mb-6 px-4 py-3 rounded-lg border-2 text-sm focus:outline-none resize-none" style="border-color:#81cebe; background-color:#ffffff"></textarea>
+<button class="btn-coral w-full justify-center py-3" onclick="event.preventDefault()">Donate Now</button>
 </div>
 </div>
 </section>
 
-<section class="py-16 lg:py-20" style="background-color:#1b7e82">
+<!-- 4. Where Your Money Goes -->
+<section class="py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Transparency &amp; Impact</h2>
+<p class="text-slate-600 max-w-2xl mx-auto">We believe in full transparency. Here's how your donations are put to work.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#1b7e82">
+<p class="font-display text-5xl mb-2" style="color:#1b7e82">60%</p>
+<h3 class="font-semibold text-lg mb-3" style="color:#234e52">Programmes</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Mentoring, training, leadership development, and scholarships that directly empower women in aquaculture.</p>
+</div>
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#81cebe">
+<p class="font-display text-5xl mb-2" style="color:#1b7e82">25%</p>
+<h3 class="font-semibold text-lg mb-3" style="color:#234e52">Community</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Events, webinars, networking opportunities, storytelling, and regional meet-ups that bring our community together.</p>
+</div>
+<div class="rounded-3xl border-2 p-8 text-center" style="background-color:#ffffff; border-color:#fb8c77">
+<p class="font-display text-5xl mb-2" style="color:#1b7e82">15%</p>
+<h3 class="font-semibold text-lg mb-3" style="color:#234e52">Operations</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Platform maintenance, communications, research, and the essential infrastructure that keeps WiA running.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 5. Testimonial -->
+<section class="py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<div class="rounded-3xl p-8 sm:p-10" style="background-color:#fcf8f2; border-left:4px solid #fb8c77">
+<svg class="w-10 h-10 mb-4" style="color:#fb8c77" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+<blockquote class="text-lg leading-relaxed mb-6" style="color:#234e52">
+"The mentoring programme gave me the confidence to start my own business. That wouldn't have happened without WiA's support. Having a mentor who understood the unique challenges women face in aquaculture was transformative for my career."
+</blockquote>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full flex items-center justify-center text-sm font-semibold text-white" style="background-color:#1b7e82">AO</div>
+<div>
+<p class="font-semibold" style="color:#234e52">Amara Osei</p>
+<p class="text-sm text-slate-500">Aquaculture Entrepreneur, Ghana</p>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</section>
+
+<!-- 6. Other Ways to Help -->
+<section class="py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Other Ways to Help</h2>
+<p class="text-slate-600 max-w-2xl mx-auto">Financial contributions are just one way to support our mission. Here are other ways you can make an impact.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="rounded-3xl border-2 p-8" style="background-color:#ffffff; border-color:#1b7e82">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mb-4" style="background-color:#eefbfb">
+<svg class="w-6 h-6" style="color:#1b7e82" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Corporate Sponsorship</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Align your brand with gender equity in aquaculture. We offer tailored sponsorship packages for events, programmes, and platform visibility.</p>
+<a href="./contact.html" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Contact for packages &rarr;</a>
+</div>
+<div class="rounded-3xl border-2 p-8" style="background-color:#ffffff; border-color:#fb8c77">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mb-4" style="background-color:#fff5f2">
+<svg class="w-6 h-6" style="color:#fb8c77" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/></svg>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">In-Kind Support</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Contribute equipment, expertise, or professional services. From pro bono consulting to software licences, every resource helps us grow.</p>
+<a href="./contact.html" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Get in touch &rarr;</a>
+</div>
+<div class="rounded-3xl border-2 p-8" style="background-color:#ffffff; border-color:#ffdd8c">
+<div class="flex items-center justify-center w-12 h-12 rounded-full mb-4" style="background-color:#fffbf0">
+<svg class="w-6 h-6" style="color:#f0b922" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"/></svg>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Spread the Word</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">Share WiA with your network. Follow us on social media, forward our newsletter, and tell colleagues about our community and mission.</p>
+<a href="./community.html" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Join the community &rarr;</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 7. CTA -->
+<section class="py-16 lg:py-20" style="background-color:#234e52">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
-<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
+<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Every Contribution Counts</h2>
+<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Help us build a future where every woman in aquaculture has the support, visibility, and opportunities she deserves.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
-<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
+<a href="#" class="btn-gold px-8 py-3" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Donate Now</a>
+<a href="./contact.html" class="btn-coral-outline px-8 py-3" style="border-color:rgba(255,255,255,0.3); color:#ffffff;">Contact Us</a>
 </div>
 </div>
 </section>
