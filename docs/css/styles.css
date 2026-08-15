@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+@font-face {
+  font-family: 'Thalassa';
+  src: url('../fonts/Thalassa.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Poppins', system-ui, sans-serif; color: #234e52; background: #fff; margin: 0; -webkit-font-smoothing: antialiased; }
+.font-display { font-family: 'Thalassa', 'Poppins', Georgia, serif; }
+a, button { transition: all 0.2s ease; }
+
+.underline-wave { position: relative; display: inline-block; }
+.underline-wave::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 8px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12'%3E%3Cpath d='M0 8 Q25 0 50 8 T100 8 T150 8 T200 8' fill='none' stroke='%23ffdd8c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") repeat-x;
+  background-size: 100px 10px;
+}
+
+@keyframes fadeInUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; }
+.animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
+.animation-delay-100 { animation-delay:.1s; }
+.animation-delay-200 { animation-delay:.2s; }
+.animation-delay-300 { animation-delay:.3s; }
+
+.site-header { position:fixed; top:0; left:0; right:0; z-index:50; background:rgba(255,255,255,0.85); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); transition:all .3s; }
+.site-header.scrolled { background:rgba(255,255,255,0.95); box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+.mobile-menu { display:none; }
+.mobile-menu.open { display:block; }
+
+.bg-sand-50 { background-color:#fcf8f2; }
+.bg-navy-800 { background-color:#234e52; }
+.text-navy-800 { color:#234e52; }
+
+.card-hover { transition: all .3s ease; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
+
+.btn-primary { display:inline-flex; align-items:center; padding:.75rem 1.75rem; font-size:.875rem; font-weight:600; color:#fff; background:#1b7e82; border-radius:9999px; text-decoration:none; transition:all .2s; }
+.btn-primary:hover { background:#176d70; transform:translateY(-1px); box-shadow:0 4px 12px rgba(27,126,130,0.3); }
+
+.btn-outline { display:inline-flex; align-items:center; padding:.75rem 1.75rem; font-size:.875rem; font-weight:600; border:2px solid rgba(255,255,255,0.3); border-radius:9999px; color:#fff; text-decoration:none; transition:all .2s; }
+.btn-outline:hover { background:rgba(255,255,255,0.1); }
+
+.btn-white { display:inline-flex; align-items:center; padding:.75rem 1.75rem; font-size:.875rem; font-weight:600; color:#0f494c; background:#fff; border-radius:9999px; text-decoration:none; transition:all .2s; }
+.btn-white:hover { background:#fcf8f2; transform:translateY(-1px); box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+
+.btn-gold { display:inline-flex; align-items:center; padding:.75rem 1.75rem; font-size:.875rem; font-weight:600; color:#234e52; background:#ffdd8c; border-radius:9999px; text-decoration:none; transition:all .2s; }
+.btn-gold:hover { background:#fff4d6; }
+
+.btn-coral-outline { display:inline-flex; align-items:center; padding:.625rem 1.5rem; font-size:.875rem; font-weight:600; color:#fb8c77; border:2px solid #fb8c77; border-radius:9999px; text-decoration:none; transition:all .2s; }
+.btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+
+.btn-outline-dark { display:inline-flex; align-items:center; padding:.75rem 1.75rem; font-size:.875rem; font-weight:600; border:2px solid rgba(255,255,255,0.3); border-radius:9999px; color:#fff; text-decoration:none; transition:all .2s; }
+.btn-outline-dark:hover { background:rgba(255,255,255,0.1); }
+
+::-webkit-scrollbar { width:8px; }
+::-webkit-scrollbar-track { background:#f3f4f6; }
+::-webkit-scrollbar-thumb { background:#94a3b8; border-radius:4px; }
