@@ -6,7 +6,13 @@
 <title>Resources — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }</style>
+<style>
+.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+.btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-coral:hover { background:#e86b53; }
+.btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+.btn-teal:hover { background:#176d70; }
+</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -20,18 +26,17 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 </head>
 <body class="min-h-full flex flex-col" style="background-color:#fcf8f2">
 
+<!-- HEADER -->
 <header class="site-header fixed top-0 left-0 right-0 z-50" style="background-color:#fcf8f2" id="site-header">
 <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="flex h-16 items-center justify-between">
-<a href="./index.html" class="flex items-center group">
-<span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span>
-</a>
+<a href="./index.html" class="flex items-center"><span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span></a>
 <div class="hidden lg:flex items-center gap-1">
-<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">About us</a>
-<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Stories</a>
-<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Mentorship</a>
-<a href="./resources.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Resources</a>
-<a href="./community.html" class="px-4 py-2 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Join us!</a>
+<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">About us</a>
+<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Stories</a>
+<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2 text-sm font-medium text-teal-500 font-semibold">Resources</a>
+<a href="./community.html" class="btn-coral px-4 py-2 text-sm">Join us!</a>
 </div>
 <button type="button" class="lg:hidden p-2 -mr-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -42,9 +47,9 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 <a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About us</a>
 <a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Stories</a>
 <a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Mentorship</a>
-<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Resources</a>
+<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-teal-500 rounded-lg">Resources</a>
 <hr class="my-2 border-slate-100">
-<a href="./community.html" class="mt-2 px-4 py-2.5 text-base font-semibold text-white rounded-full text-center" style="background-color:#fb8c77">Join us!</a>
+<a href="./community.html" class="btn-coral mt-2 text-center">Join us!</a>
 </div>
 </div>
 </nav>
@@ -52,74 +57,291 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 
 <main class="flex-1 pt-16">
 
+<!-- HERO -->
 <section class="py-20 lg:py-28" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 <h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Resources</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80">Tools and resources for women in aquaculture</p>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Reports, guides, toolkits and webinar replays to support women at every stage of their aquaculture career.</p>
 </div>
 </section>
 
-<section class="py-20" style="background-color:#fcf8f2">
+<!-- REPORTS & PUBLICATIONS -->
+<section class="py-16 lg:py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Browse Resources</h2></div>
+<div class="mb-12">
+<p class="text-sm font-bold mb-2" style="color:#1b7e82">Reports &amp; Publications</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-3" style="color:#234e52">Industry Research</h2>
+<p class="text-slate-600 max-w-2xl">Data-driven reports on the state of women in aquaculture, gender equity frameworks, and sector analysis.</p>
+</div>
 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#81cebe"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#1b7e82; color:#ffffff">Report</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">State of Women in Aquaculture 2025</h3><p class="text-sm text-slate-600 mb-4">Comprehensive report on the status of women in the global aquaculture sector.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Download PDF &rarr;</a></div>
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#81cebe"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#81cebe; color:#234e52">Guide</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Mentoring Best Practices Guide</h3><p class="text-sm text-slate-600 mb-4">A practical guide for mentors and mentees in the aquaculture industry.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Download PDF &rarr;</a></div>
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#fb8c77"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#fb8c77; color:#ffffff">Webinar</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Leadership in Aquaculture</h3><p class="text-sm text-slate-600 mb-4">Recorded webinar featuring women leaders from across the industry.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Watch Replay &rarr;</a></div>
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#ffdd8c"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#ffdd8c; color:#234e52">Tool</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Career Planning Toolkit</h3><p class="text-sm text-slate-600 mb-4">Templates and exercises for planning your career in aquaculture.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Download &rarr;</a></div>
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#81cebe"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#1b7e82; color:#ffffff">Report</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Gender Equity Framework</h3><p class="text-sm text-slate-600 mb-4">A framework for organisations working toward gender equity in aquaculture.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Download PDF &rarr;</a></div>
-<div class="rounded-2xl border-2 p-6" style="background-color:#ffffff; border-color:#81cebe"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#81cebe; color:#234e52">Guide</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Starting Your Aquaculture Business</h3><p class="text-sm text-slate-600 mb-4">Step-by-step guide for women starting their own aquaculture enterprise.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Download PDF &rarr;</a></div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#1b7e82">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#1b7e82">PDF</span>
+<span class="text-xs text-slate-400">2025 &middot; 48 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">State of Women in Aquaculture 2025</h3>
+<p class="text-sm text-slate-600 mb-4">Our flagship annual report covering workforce participation, leadership representation, pay equity, and regional trends across 40 countries.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#1b7e82">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#1b7e82">PDF</span>
+<span class="text-xs text-slate-400">2024 &middot; 32 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Gender Equity Framework for Aquaculture</h3>
+<p class="text-sm text-slate-600 mb-4">A practical framework for organisations seeking to improve gender equity in hiring, promotion, and decision-making within aquaculture operations.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#1b7e82">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#1b7e82">PDF</span>
+<span class="text-xs text-slate-400">2024 &middot; 24 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Women-Led Innovation in Aquaculture</h3>
+<p class="text-sm text-slate-600 mb-4">Case studies of 12 women-led innovations across shrimp farming, seaweed cultivation, fish feed technology, and sustainable harvesting methods.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
 </div>
 </div>
 </section>
 
-<section class="py-20" style="background-color:#ffffff">
+<!-- GUIDES & TOOLKITS -->
+<section class="py-16 lg:py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12">
+<p class="text-sm font-bold mb-2" style="color:#81cebe">Guides &amp; Toolkits</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-3" style="color:#234e52">Practical Resources</h2>
+<p class="text-slate-600 max-w-2xl">Step-by-step guides, templates, and toolkits to help you navigate your career, start a business, or become a mentor.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Guide</span>
+<span class="text-xs text-slate-400">2025 &middot; 18 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Mentoring Best Practices Guide</h3>
+<p class="text-sm text-slate-600 mb-4">Everything you need to know about being an effective mentor or mentee — setting goals, structuring sessions, giving feedback, and building lasting professional relationships.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Toolkit</span>
+<span class="text-xs text-slate-400">2025 &middot; Templates included</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Career Planning Toolkit</h3>
+<p class="text-sm text-slate-600 mb-4">A complete toolkit with self-assessment worksheets, goal-setting templates, CV and cover letter guides, and interview preparation checklists tailored for aquaculture careers.</p>
+<a href="#" class="btn-teal">Download Kit</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Guide</span>
+<span class="text-xs text-slate-400">2024 &middot; 28 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Starting Your Aquaculture Business</h3>
+<p class="text-sm text-slate-600 mb-4">From business planning and permits to funding sources and supply chain setup — a comprehensive guide for women launching their own aquaculture enterprise.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Guide</span>
+<span class="text-xs text-slate-400">2024 &middot; 14 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Grant Writing for Aquaculture Projects</h3>
+<p class="text-sm text-slate-600 mb-4">Tips and templates for writing successful grant applications. Includes a database of 50+ funding opportunities specifically relevant to women in aquaculture.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Toolkit</span>
+<span class="text-xs text-slate-400">2025 &middot; Worksheets</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Leadership Skills Self-Assessment</h3>
+<p class="text-sm text-slate-600 mb-4">Evaluate your leadership strengths and growth areas with this structured self-assessment tool. Includes a personalised development plan template.</p>
+<a href="#" class="btn-teal">Download Kit</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full" style="background:#81cebe; color:#234e52">Guide</span>
+<span class="text-xs text-slate-400">2024 &middot; 20 pages</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Sustainable Aquaculture Practices</h3>
+<p class="text-sm text-slate-600 mb-4">An accessible guide to environmentally responsible aquaculture — covering water quality, feed management, biodiversity, and certification pathways.</p>
+<a href="#" class="btn-teal">Download PDF</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WEBINAR REPLAYS -->
+<section class="py-16 lg:py-20" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12">
+<p class="text-sm font-bold mb-2" style="color:#fb8c77">Webinar Replays</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-3" style="color:#234e52">Watch &amp; Learn</h2>
+<p class="text-slate-600 max-w-2xl">Missed a webinar? Catch up on recorded sessions from industry leaders, researchers, and entrepreneurs.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Mar 2026 &middot; 58 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Breaking Barriers: Women in Aquaculture Leadership</h3>
+<p class="text-sm text-slate-600 mb-4">Four women leaders discuss their paths to senior roles, the obstacles they faced, and what needs to change for the next generation.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Feb 2026 &middot; 45 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">From Research to Business: Making the Leap</h3>
+<p class="text-sm text-slate-600 mb-4">Three women who transitioned from academic research to running commercial aquaculture operations share their lessons learned.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Jan 2026 &middot; 52 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Climate Resilience in Coastal Aquaculture</h3>
+<p class="text-sm text-slate-600 mb-4">Expert panel on adapting aquaculture practices to climate change — from rising sea temperatures to extreme weather events and their impact on coastal communities.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Nov 2025 &middot; 40 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Funding Your Aquaculture Venture</h3>
+<p class="text-sm text-slate-600 mb-4">Grants, loans, and investment — how to fund your aquaculture business. Featuring women who secured funding for their operations.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Oct 2025 &middot; 55 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Innovation &amp; Technology in Aquaculture</h3>
+<p class="text-sm text-slate-600 mb-4">How women are driving technological innovation — from IoT monitoring systems to AI-powered feed optimisation and blockchain traceability.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<div class="flex items-center gap-2 mb-4">
+<span class="px-2.5 py-1 text-xs font-bold rounded-full text-white" style="background:#fb8c77">Video</span>
+<span class="text-xs text-slate-400">Sep 2025 &middot; 48 min</span>
+</div>
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Seaweed Farming: Opportunities for Women</h3>
+<p class="text-sm text-slate-600 mb-4">The growing seaweed industry offers unique opportunities for women entrepreneurs. Learn from pioneers in Indonesia, Tanzania, and Ireland.</p>
+<a href="#" class="btn-coral">Watch Replay</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EXTERNAL RESOURCES -->
+<section class="py-16 lg:py-20" style="background-color:#ffffff">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12">
+<p class="text-sm font-bold mb-2" style="color:#ffdd8c">External Resources</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-3" style="color:#234e52">Further Reading</h2>
+<p class="text-slate-600 max-w-2xl">Curated links to reports, databases, and organisations relevant to women in aquaculture.</p>
+</div>
+<div class="grid sm:grid-cols-2 gap-6 max-w-4xl">
+
+<div class="bg-white rounded-3xl border-2 p-6" style="border-color:#ffdd8c">
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">FAO — The Role of Women in Fisheries and Aquaculture</h3>
+<p class="text-sm text-slate-600 mb-3">The Food and Agriculture Organization's research on women's contributions to fisheries and aquaculture globally.</p>
+<span class="text-xs text-slate-400">fao.org</span>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6" style="border-color:#ffdd8c">
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">WorldFish — Gender Research Programme</h3>
+<p class="text-sm text-slate-600 mb-3">WorldFish's dedicated gender research programme exploring equity, inclusion, and women's empowerment in aquatic food systems.</p>
+<span class="text-xs text-slate-400">worldfishcenter.org</span>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6" style="border-color:#ffdd8c">
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">Global Aquaculture Alliance — Best Practices</h3>
+<p class="text-sm text-slate-600 mb-3">Industry standards and best practices for responsible aquaculture, including guidance on social responsibility and labour equity.</p>
+<span class="text-xs text-slate-400">globalseafood.org</span>
+</div>
+
+<div class="bg-white rounded-3xl border-2 p-6" style="border-color:#ffdd8c">
+<h3 class="font-semibold text-lg mb-2" style="color:#234e52">UN Women — Economic Empowerment</h3>
+<p class="text-sm text-slate-600 mb-3">UN Women's resources on economic empowerment, gender-responsive budgeting, and women's participation in agriculture and aquaculture.</p>
+<span class="text-xs text-slate-400">unwomen.org</span>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="py-16 lg:py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
 <h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Stay Updated</h2>
-<p class="text-slate-600 mb-8">Get the latest resources delivered to your inbox.</p>
-<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault()">
-<input type="email" placeholder="Your email address" class="flex-1 px-5 py-3.5 rounded-full border-2 text-sm focus:outline-none" style="border-color:#81cebe; background-color:#fcf8f2" required>
-<button type="submit" class="px-8 py-3.5 text-sm font-semibold text-white rounded-full whitespace-nowrap transition-colors" style="background-color:#fb8c77">Subscribe</button>
+<p class="text-slate-600 mb-8">Get new resources delivered to your inbox. No spam — just the good stuff.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto items-center" onsubmit="event.preventDefault()">
+<input type="email" placeholder="Your email address" class="flex-1 w-full px-5 py-3.5 rounded-full border-2 border-slate-200 text-sm focus:outline-none" style="background:#fff" required>
+<button type="submit" class="btn-coral px-8 py-3.5 whitespace-nowrap">Subscribe</button>
 </form>
 </div>
 </section>
 
-<section class="py-16 lg:py-20" style="background-color:#1b7e82">
-<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
-<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
-<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
-</div>
+<!-- CTA -->
+<section class="py-16 lg:py-20 text-white text-center" style="background-color:#234e52">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Have a Resource to Share?</h2>
+<p class="text-white/80 text-lg mb-8">If you've created a report, guide, or tool relevant to women in aquaculture, we'd love to feature it.</p>
+<a href="./contact.html" class="btn-coral shadow-lg px-8 py-3.5">Get in Touch</a>
 </div>
 </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer style="background-color:#234e52" class="text-white">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="col-span-2 md:col-span-1">
-<span class="font-display text-lg text-white mb-4 block">Women in Aquaculture</span>
+<span class="font-display text-lg mb-4 block" style="color:#81cebe">Women in Aquaculture</span>
 <p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
 </div>
 <div>
 <h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
 <ul class="space-y-2 text-sm text-slate-400">
-<li><a href="./about.html" class="hover:text-[#81cebe] transition-colors">About us</a></li>
-<li><a href="./stories.html" class="hover:text-[#81cebe] transition-colors">Stories</a></li>
-<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Mentorship</a></li>
-<li><a href="./resources.html" class="hover:text-[#81cebe] transition-colors">Resources</a></li>
+<li><a href="./about.html" class="hover:text-white transition-colors">About us</a></li>
+<li><a href="./stories.html" class="hover:text-white transition-colors">Stories</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Mentorship</a></li>
+<li><a href="./resources.html" class="hover:text-white transition-colors">Resources</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
 <ul class="space-y-2 text-sm text-slate-400">
-<li><a href="./community.html" class="hover:text-[#81cebe] transition-colors">Join us!</a></li>
-<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Become a Mentor</a></li>
-<li><a href="./donate.html" class="hover:text-[#81cebe] transition-colors">Donate</a></li>
-<li><a href="./contact.html" class="hover:text-[#81cebe] transition-colors">Contact</a></li>
+<li><a href="./community.html" class="hover:text-white transition-colors">Join us!</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Become a Mentor</a></li>
+<li><a href="./donate.html" class="hover:text-white transition-colors">Donate</a></li>
+<li><a href="./contact.html" class="hover:text-white transition-colors">Contact</a></li>
 </ul>
 </div>
 <div>
@@ -132,6 +354,9 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 </div>
 </div>
 </footer>
-<script>window.addEventListener("scroll",function(){document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>20)});</script>
-
-</body></html>
+<script>
+window.addEventListener("scroll",function(){document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>20)});
+document.querySelector('[aria-label="Menu"]').addEventListener("click",function(){document.getElementById("mobile-menu").classList.toggle("open")});
+</script>
+</body>
+</html>
