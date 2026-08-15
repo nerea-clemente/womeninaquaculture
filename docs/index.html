@@ -18,45 +18,44 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 </script>
 <style>
   .font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+  .btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.75rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; }
+  .btn-coral:hover { background:#e86b53; }
+  .btn-coral-outline { display:inline-flex; align-items:center; justify-content:center; padding:0.75rem 1.5rem; border:2px solid #fb8c77; color:#fb8c77; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; }
+  .btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+  .btn-gold { display:inline-flex; align-items:center; justify-content:center; padding:0.75rem 1.5rem; background:#ffdd8c; color:#234e52; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; }
+  .btn-gold:hover { background:#ffd066; }
+  .btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.75rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; }
+  .btn-teal:hover { background:#176d70; }
 </style>
 </head>
-<body class="min-h-full flex flex-col">
+<body class="min-h-full flex flex-col" style="background-color:#fcf8f2">
 
-<!-- ============================================================ -->
-<!-- HEADER (fixed, warm cream background, h-16)                   -->
-<!-- ============================================================ -->
-<header class="site-header fixed top-0 left-0 right-0 z-50 bg-[#fcf8f2]" id="site-header">
+<!-- HEADER -->
+<header class="site-header fixed top-0 left-0 right-0 z-50" style="background-color:#fcf8f2" id="site-header">
 <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 <div class="flex h-16 items-center justify-between">
-<!-- Logo: small italic signature style -->
 <a href="./index.html" class="flex items-center group">
-<span class="font-display text-lg text-navy-800">Women in Aquaculture</span>
+<span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span>
 </a>
-
-<!-- Desktop nav links -->
 <div class="hidden lg:flex items-center gap-1">
 <a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">About us</a>
 <a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Stories</a>
 <a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Mentorship</a>
 <a href="./resources.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Resources</a>
-<a href="./community.html" class="px-4 py-2 text-sm font-semibold text-white bg-[#fb8c77] hover:bg-[#e86b53] rounded-full transition-colors">Join us!</a>
+<a href="./community.html" class="btn-coral px-4 py-2 text-sm">Join us!</a>
 </div>
-
-<!-- Mobile hamburger -->
-<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-500" aria-label="Menu">
+<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
-
-<!-- Mobile menu -->
 <div class="mobile-menu lg:hidden border-t border-slate-100 py-4" id="mobile-menu">
 <div class="flex flex-col gap-1">
-<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">About us</a>
-<a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Stories</a>
-<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Mentorship</a>
-<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Resources</a>
+<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About us</a>
+<a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Stories</a>
+<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Resources</a>
 <hr class="my-2 border-slate-100">
-<a href="./community.html" class="mt-2 inline-flex items-center justify-center px-6 py-3 bg-[#fb8c77] text-white font-semibold rounded-full hover:bg-[#e86b53] transition-colors">Join us!</a>
+<a href="./community.html" class="btn-coral mt-2 text-center">Join us!</a>
 </div>
 </div>
 </nav>
@@ -64,328 +63,218 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 
 <main class="flex-1 pt-16">
 
-<!-- ============================================================ -->
-<!-- HERO (~60vh, ocean gradient + wave SVG overlay)                -->
-<!-- ============================================================ -->
+<!-- HERO -->
 <section class="relative overflow-hidden flex items-center justify-center" style="min-height:60vh; background: linear-gradient(180deg, #0a6c6e 0%, #0e8589 15%, #1a9ea2 30%, #27b0b3 45%, #3cc0bf 60%, #5bcec6 75%, #7edbd0 90%, #a5e8de 100%);">
-  <!-- Wave foam texture layers -->
-  <div class="absolute inset-0" style="background-image:
-    url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='900'%3E%3Cdefs%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.005' numOctaves='5' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E&quot;);
-    background-size: cover;"></div>
-  <!-- Diagonal wave lines -->
-  <div class="absolute inset-0 opacity-20" style="background-image:
-    repeating-linear-gradient(
-      -15deg,
-      transparent,
-      transparent 40px,
-      rgba(255,255,255,0.08) 40px,
-      rgba(255,255,255,0.08) 42px
-    ),
-    repeating-linear-gradient(
-      -15deg,
-      transparent,
-      transparent 80px,
-      rgba(255,255,255,0.12) 80px,
-      rgba(255,255,255,0.12) 84px
-    );"></div>
-  <!-- Wave crests (white foam) -->
-  <div class="absolute inset-0">
-    <svg class="absolute top-[10%] w-full opacity-20" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 Q180,5 360,30 T720,30 T1080,30 T1440,30" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>
-    <svg class="absolute top-[25%] w-full opacity-15" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M-100,35 Q120,8 340,35 T780,30 T1200,35 T1540,30" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
-    <svg class="absolute top-[42%] w-full opacity-10" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M-50,28 Q200,2 400,28 T800,32 T1100,28 T1500,32" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-    <svg class="absolute top-[60%] w-full opacity-[0.07]" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,32 Q150,10 350,32 T750,28 T1150,32 T1440,28" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-  </div>
-  <!-- Bottom wave transition to cream -->
-  <div class="absolute bottom-0 left-0 right-0">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full" preserveAspectRatio="none">
-      <path fill="#fcf8f2" d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120Z"></path>
-    </svg>
-  </div>
-
+<div class="absolute inset-0" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='900'%3E%3Cdefs%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.005' numOctaves='5' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E&quot;);background-size:cover"></div>
+<div class="absolute inset-0 opacity-20" style="background-image:repeating-linear-gradient(-15deg,transparent,transparent 40px,rgba(255,255,255,0.08) 40px,rgba(255,255,255,0.08) 42px),repeating-linear-gradient(-15deg,transparent,transparent 80px,rgba(255,255,255,0.12) 80px,rgba(255,255,255,0.12) 84px)"></div>
+<div class="absolute inset-0">
+<svg class="absolute top-[10%] w-full opacity-20" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 Q180,5 360,30 T720,30 T1080,30 T1440,30" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>
+<svg class="absolute top-[25%] w-full opacity-15" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M-100,35 Q120,8 340,35 T780,30 T1200,35 T1540,30" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+<svg class="absolute top-[42%] w-full opacity-10" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M-50,28 Q200,2 400,28 T800,32 T1100,28 T1500,32" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+</div>
+<div class="absolute bottom-0 left-0 right-0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full" preserveAspectRatio="none"><path fill="#fcf8f2" d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120Z"></path></svg>
+</div>
 <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center py-20 z-10">
-<h1 class="font-display text-5xl lg:text-6xl text-white leading-tight mb-6">
-Empowering women.<br>Transforming aquaculture.
-</h1>
+<h1 class="font-display text-5xl lg:text-6xl text-white leading-tight mb-6">Empowering women.<br>Transforming aquaculture.</h1>
 <p class="max-w-xl mx-auto text-base text-white/80 leading-relaxed mb-10">A global platform for women in aquaculture.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="inline-flex items-center justify-center px-8 py-3 bg-[#fb8c77] text-white font-semibold rounded-full hover:bg-[#e86b53] transition-colors shadow-lg">Join the WiA</a>
-<a href="./community.html" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white/60 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">Get Involved</a>
+<a href="./community.html" class="btn-coral shadow-lg px-8 py-3">Join the WiA</a>
+<a href="./get-involved.html" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white/60 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">Get Involved</a>
 </div>
 </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- IMPACT AT A GLANCE (warm cream background)                    -->
-<!-- ============================================================ -->
+<!-- IMPACT AT A GLANCE -->
 <section class="py-16 lg:py-24" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<!-- Two-column heading + paragraph -->
 <div class="grid lg:grid-cols-2 gap-8 mb-14 items-start">
-<div>
-<h2 class="font-display text-4xl lg:text-5xl text-teal-500 leading-tight">Impact at a<br>Glance</h2>
+<div><h2 class="font-display text-4xl lg:text-5xl leading-tight" style="color:#1b7e82">Impact at a<br>Glance</h2></div>
+<div><p class="text-slate-600 leading-relaxed text-base lg:text-lg">Women make up a vital part of the aquaculture workforce, yet their contributions often go unrecognised. Despite representing nearly half of the sector's labour force, women remain underrepresented in leadership and decision-making. <strong style="color:#234e52">We're here to change that.</strong></p></div>
 </div>
-<div>
-<p class="text-slate-600 leading-relaxed text-base lg:text-lg">Women make up a vital part of the aquaculture workforce, yet their contributions often go unrecognised and their voices unheard. Despite representing nearly half of the sector's labour force, women remain underrepresented in leadership, decision-making, and access to resources. <strong class="text-navy-800">We're here to change that.</strong></p>
-</div>
-</div>
-
-<!-- 3 stat cards -->
 <div class="grid sm:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-3xl border-2 border-teal-500 p-6 sm:p-8 text-center">
-<p class="text-sm font-bold text-[#1b7e82] mb-4">Workforce Representation</p>
-<p class="font-display text-5xl text-navy-800 mb-3">50%</p>
-<div class="border-t-2 border-dotted border-[#81cebe] my-4"></div>
+<div class="bg-white rounded-3xl border-2 p-6 sm:p-8 text-center" style="border-color:#1b7e82">
+<p class="text-sm font-bold mb-4" style="color:#1b7e82">Workforce Representation</p>
+<p class="font-display text-5xl mb-3" style="color:#234e52">50%</p>
+<div class="border-t-2 border-dotted my-4" style="border-color:#81cebe"></div>
 <p class="text-sm text-slate-500 leading-relaxed">Half of the global aquaculture workforce is made up of women.</p>
 </div>
-<!-- Card 2 -->
-<div class="bg-white rounded-3xl border-2 border-teal-500 p-6 sm:p-8 text-center">
-<p class="text-sm font-bold text-[#1b7e82] mb-4">Women in Leadership</p>
-<p class="font-display text-5xl text-navy-800 mb-3">10%</p>
-<div class="border-t-2 border-dotted border-[#81cebe] my-4"></div>
-<p class="text-sm text-slate-500 leading-relaxed">Only around 10% of leadership positions in the sector are held by women.</p>
+<div class="bg-white rounded-3xl border-2 p-6 sm:p-8 text-center" style="border-color:#1b7e82">
+<p class="text-sm font-bold mb-4" style="color:#1b7e82">Women in Leadership</p>
+<p class="font-display text-5xl mb-3" style="color:#234e52">10%</p>
+<div class="border-t-2 border-dotted my-4" style="border-color:#81cebe"></div>
+<p class="text-sm text-slate-500 leading-relaxed">Only around 10% of leadership positions are held by women.</p>
 </div>
-<!-- Card 3 -->
-<div class="bg-white rounded-3xl border-2 border-teal-500 p-6 sm:p-8 text-center">
-<p class="text-sm font-bold text-[#1b7e82] mb-4">Community Members</p>
-<p class="font-display text-5xl text-navy-800 mb-3">500</p>
-<div class="border-t-2 border-dotted border-[#81cebe] my-4"></div>
-<p class="text-sm text-slate-500 leading-relaxed">Women connected and supported through the WiA community worldwide.</p>
+<div class="bg-white rounded-3xl border-2 p-6 sm:p-8 text-center" style="border-color:#1b7e82">
+<p class="text-sm font-bold mb-4" style="color:#1b7e82">Community Members</p>
+<p class="font-display text-5xl mb-3" style="color:#234e52">500</p>
+<div class="border-t-2 border-dotted my-4" style="border-color:#81cebe"></div>
+<p class="text-sm text-slate-500 leading-relaxed">Women connected through the WiA community worldwide.</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- MEET MARIA (white background for contrast)                    -->
-<!-- ============================================================ -->
-<section class="py-16 bg-white">
+<!-- MEET MARIA -->
+<section class="py-16" style="background-color:#ffffff">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<!-- Label -->
-<p class="text-sm font-bold text-navy-800 mb-10 text-center">Meet the women shaping aquaculture</p>
-
-<!-- Two-column layout -->
+<p class="text-sm font-bold mb-10 text-center" style="color:#234e52">Meet the women shaping aquaculture</p>
 <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-<!-- Left: Image area with coral border -->
 <div class="flex items-center justify-center">
-<div class="w-full aspect-[4/3] rounded-3xl border-4 border-coral-400 overflow-hidden bg-gradient-to-b from-sky-100 via-green-50 to-green-100 flex items-end justify-center">
-<!-- Landscape placeholder with clouds/hills/water -->
+<div class="w-full aspect-[4/3] rounded-3xl border-4 overflow-hidden" style="border-color:#fb8c77; background: linear-gradient(180deg, #e0f2fe 0%, #dcfce7 60%, #a5f3fc 100%);">
 <svg class="w-full h-full" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!-- Sky -->
 <rect width="400" height="300" fill="#e0f2fe"/>
-<!-- Clouds -->
 <ellipse cx="100" cy="80" rx="50" ry="25" fill="white" opacity="0.8"/>
 <ellipse cx="130" cy="75" rx="40" ry="20" fill="white" opacity="0.7"/>
 <ellipse cx="300" cy="60" rx="45" ry="22" fill="white" opacity="0.6"/>
-<ellipse cx="330" cy="55" rx="35" ry="18" fill="white" opacity="0.5"/>
-<!-- Hills -->
 <path d="M0 200 Q100 130 200 180 Q300 130 400 170 L400 300 L0 300Z" fill="#bbf7d0" opacity="0.7"/>
 <path d="M0 230 Q80 170 180 210 Q280 170 400 200 L400 300 L0 300Z" fill="#86efac" opacity="0.6"/>
-<!-- Water -->
-<rect x="0" y="250" width="400" height="50" fill="#a5f3fc" opacity="0.5"/>
+<rect x="0" y="260" width="400" height="40" fill="#a5f3fc" opacity="0.4"/>
 </svg>
 </div>
 </div>
-
-<!-- Right: Content -->
 <div class="flex flex-col justify-center">
-<h3 class="font-display text-3xl sm:text-4xl text-coral-400 mb-4">Meet Maria</h3>
+<h3 class="font-display text-3xl sm:text-4xl mb-4" style="color:#fb8c77">Meet Maria</h3>
 <p class="text-slate-600 leading-relaxed mb-6">After 15 years in marine biology research, Maria made the bold leap into commercial shrimp farming in coastal India. Today she manages one of the region's most sustainable operations and mentors the next generation of women in aquaculture.</p>
-<a href="./stories.html" class="self-start inline-flex items-center justify-center px-6 py-3 border-2 border-coral-400 text-coral-400 font-semibold rounded-full hover:bg-coral-400 hover:text-white transition-colors">Read her story</a>
+<a href="./stories.html" class="btn-coral-outline self-start">Read her story</a>
 </div>
 </div>
 </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- MENTORSHIP THAT WORKS (teal background)                       -->
-<!-- ============================================================ -->
-<section class="py-16 lg:py-24 bg-teal-500 text-white">
+<!-- MENTORSHIP -->
+<section class="py-16 lg:py-24 text-white" style="background-color:#1b7e82">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<!-- Centered heading -->
 <h2 class="font-display text-4xl lg:text-5xl text-white leading-tight mb-12 text-center">Mentorship that works</h2>
-
-<!-- Two cards side by side -->
 <div class="grid sm:grid-cols-2 max-w-3xl mx-auto gap-6">
-<!-- Card 1: Become a Mentor -->
 <div class="bg-white rounded-3xl p-8 text-center">
-<h3 class="font-bold text-xl text-navy-800 mb-4">Become a Mentor</h3>
+<h3 class="font-bold text-xl mb-4" style="color:#234e52">Become a Mentor</h3>
 <p class="text-slate-600 leading-relaxed mb-4">Share your experience and support the next generation.</p>
-<p class="text-sm text-slate-500 mb-6">Just <strong class="text-navy-800">1 hour a month</strong>, on your terms.</p>
-<a href="./programmes.html" class="inline-flex items-center justify-center px-6 py-3 bg-[#ffdd8c] text-[#234e52] font-semibold rounded-full hover:bg-[#ffd066] transition-colors">Become a WiA Mentor</a>
+<p class="text-sm text-slate-500 mb-6">Just <strong style="color:#234e52">1 hour a month</strong>, on your terms.</p>
+<a href="./programmes.html" class="btn-gold">Become a WiA Mentor</a>
 </div>
-
-<!-- Card 2: Find a Mentor -->
 <div class="bg-white rounded-3xl p-8 text-center">
-<h3 class="font-bold text-xl text-navy-800 mb-4">Find a Mentor</h3>
+<h3 class="font-bold text-xl mb-4" style="color:#234e52">Find a Mentor</h3>
 <p class="text-slate-600 leading-relaxed mb-4">Looking for guidance or perspective in your career?</p>
 <p class="text-sm text-slate-500 mb-6">Find a mentor who's been there.</p>
-<a href="./programmes.html" class="inline-flex items-center justify-center px-6 py-3 border-2 border-coral-400 text-coral-400 font-semibold rounded-full hover:bg-coral-400 hover:text-white transition-colors">Find a WiA Mentor</a>
+<a href="./programmes.html" class="btn-coral-outline">Find a WiA Mentor</a>
 </div>
 </div>
 </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- GET INVOLVED (warm cream background)                          -->
-<!-- ============================================================ -->
+<!-- GET INVOLVED -->
 <section class="py-16 lg:py-24" style="background-color:#fcf8f2">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <p class="text-sm font-bold text-teal-500 mb-3">Get Involved</p>
-      <h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4" style="color:#234e52">Be Part of the Change</h2>
-      <p class="max-w-2xl mx-auto text-slate-600">There are many ways to support, contribute and grow with Women in Aquaculture.</p>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      <a href="./community.html" class="group block p-6 rounded-3xl bg-white border-2 border-[#81cebe] hover:border-[#1b7e82] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-        <h3 class="font-semibold text-lg mb-2 group-hover:text-[#1b7e82] transition-colors" style="color:#234e52">Join the Community</h3>
-        <p class="text-sm text-slate-500">Connect with women across aquaculture worldwide.</p>
-      </a>
-      <a href="./partners.html" class="group block p-6 rounded-3xl bg-white border-2 border-[#fb8c77] hover:border-[#e86b53] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-        <h3 class="font-semibold text-lg mb-2 group-hover:text-[#fb8c77] transition-colors" style="color:#234e52">Become a Partner</h3>
-        <p class="text-sm text-slate-500">Align your brand with the future of aquaculture.</p>
-      </a>
-      <a href="./donate.html" class="group block p-6 rounded-3xl bg-white border-2 border-[#ffdd8c] hover:border-[#ffd066] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-        <h3 class="font-semibold text-lg mb-2 group-hover:text-[#f0b922] transition-colors" style="color:#234e52">Donate</h3>
-        <p class="text-sm text-slate-500">Fund mentoring, events and community building.</p>
-      </a>
-      <a href="./get-involved.html" class="group block p-6 rounded-3xl bg-white border-2 border-[#1b7e82] hover:border-[#234e52] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-        <h3 class="font-semibold text-lg mb-2 group-hover:text-[#1b7e82] transition-colors" style="color:#234e52">Share Your Story</h3>
-        <p class="text-sm text-slate-500">Inspire others with your aquaculture journey.</p>
-      </a>
-    </div>
-  </div>
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<p class="text-sm font-bold mb-3" style="color:#1b7e82">Get Involved</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Be Part of the Change</h2>
+<p class="max-w-2xl mx-auto text-slate-600">There are many ways to support, contribute and grow with Women in Aquaculture.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<a href="./community.html" class="group block p-6 rounded-3xl bg-white border-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#81cebe">
+<h3 class="font-semibold text-lg mb-2 group-hover:text-teal-500 transition-colors" style="color:#234e52">Join the Community</h3>
+<p class="text-sm text-slate-500">Connect with women across aquaculture worldwide.</p>
+</a>
+<a href="./partners.html" class="group block p-6 rounded-3xl bg-white border-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#fb8c77">
+<h3 class="font-semibold text-lg mb-2 transition-colors" style="color:#234e52">Become a Partner</h3>
+<p class="text-sm text-slate-500">Align your brand with the future of aquaculture.</p>
+</a>
+<a href="./donate.html" class="group block p-6 rounded-3xl bg-white border-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#ffdd8c">
+<h3 class="font-semibold text-lg mb-2 transition-colors" style="color:#234e52">Donate</h3>
+<p class="text-sm text-slate-500">Fund mentoring, events and community building.</p>
+</a>
+<a href="./get-involved.html" class="group block p-6 rounded-3xl bg-white border-2 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color:#1b7e82">
+<h3 class="font-semibold text-lg mb-2 group-hover:text-teal-500 transition-colors" style="color:#234e52">Share Your Story</h3>
+<p class="text-sm text-slate-500">Inspire others with your aquaculture journey.</p>
+</a>
+</div>
+</div>
 </section>
 
-<!-- ============================================================ -->
-<!-- PARTNER LOGOS BAR (white for contrast)                         -->
-<!-- ============================================================ -->
+<!-- PARTNERS -->
 <section class="py-12 bg-white border-t border-slate-100">
-  <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-    <p class="text-center text-xs font-semibold text-slate-400 tracking-wider uppercase mb-8">Supported by industry leaders</p>
-    <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14">
-      <span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">AquaCorp</span>
-      <span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">NordicFeed</span>
-      <span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">OceanTech</span>
-      <span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">BluHarvest</span>
-      <span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">SeaVentures</span>
-    </div>
-  </div>
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<p class="text-center text-xs font-semibold text-slate-400 tracking-wider uppercase mb-8">Supported by industry leaders</p>
+<div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14">
+<span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">AquaCorp</span>
+<span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">NordicFeed</span>
+<span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">OceanTech</span>
+<span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">BluHarvest</span>
+<span class="text-base font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">SeaVentures</span>
+</div>
+</div>
 </section>
 
-<!-- ============================================================ -->
-<!-- NEWSLETTER (warm cream background)                            -->
-<!-- ============================================================ -->
+<!-- NEWSLETTER -->
 <section class="py-16 lg:py-20" style="background-color:#fcf8f2">
-  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Stay in the Loop</h2>
-    <p class="text-slate-600 mb-8">Get the latest stories, events and opportunities. No spam — just the good stuff.</p>
-    <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault()">
-      <input type="email" placeholder="Your email address" class="flex-1 px-5 py-3.5 rounded-full border-2 border-slate-200 focus:border-[#81cebe] focus:outline-none text-sm" required>
-      <button type="submit" class="px-8 py-3.5 bg-coral-400 hover:bg-coral-500 text-white font-semibold rounded-full transition-colors whitespace-nowrap">Subscribe</button>
-    </form>
-  </div>
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Stay in the Loop</h2>
+<p class="text-slate-600 mb-8">Get the latest stories, events and opportunities. No spam — just the good stuff.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto items-center" onsubmit="event.preventDefault()">
+<input type="email" placeholder="Your email address" class="flex-1 w-full px-5 py-3.5 rounded-full border-2 border-slate-200 text-sm focus:outline-none" style="background:#fff" required>
+<button type="submit" class="btn-coral px-8 py-3.5 whitespace-nowrap">Subscribe</button>
+</form>
+</div>
 </section>
 
-<!-- ============================================================ -->
-<!-- FINAL CTA (deep sea navy with warmth)                         -->
-<!-- ============================================================ -->
+<!-- FINAL CTA -->
 <section class="py-16 lg:py-20 text-white text-center relative overflow-hidden" style="background-color:#234e52">
-  <div class="absolute inset-0 opacity-10">
-    <svg class="absolute top-0 left-0 w-full" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,100 Q360,20 720,100 T1440,100 L1440,0 L0,0Z" fill="white"/></svg>
-  </div>
-  <div class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-    <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Ready to Make a Difference?</h2>
-    <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Join Women in Aquaculture and become part of a global movement.</p>
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="./community.html" class="px-8 py-3.5 bg-[#ffdd8c] font-semibold rounded-full hover:bg-[#ffd066] transition-colors shadow-lg" style="color:#234e52">Join WiA Community</a>
-      <a href="./about.html" class="px-8 py-3.5 border-2 border-white/40 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">Learn More</a>
-    </div>
-  </div>
+<div class="absolute inset-0 opacity-10">
+<svg class="absolute top-0 left-0 w-full" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,100 Q360,20 720,100 T1440,100 L1440,0 L0,0Z" fill="white"/></svg>
+</div>
+<div class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Ready to Make a Difference?</h2>
+<p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Join Women in Aquaculture and become part of a global movement.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="./community.html" class="btn-gold shadow-lg px-8 py-3.5">Join WiA Community</a>
+<a href="./about.html" class="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white/40 text-white font-semibold rounded-full hover:bg-white/10 transition-colors">Learn More</a>
+</div>
+</div>
 </section>
 
 </main>
 
-<!-- ============================================================ -->
-<!-- FOOTER (bg-navy-800, text-white)                              -->
-<!-- ============================================================ -->
-<footer class="bg-navy-800 text-white">
+<!-- FOOTER -->
+<footer style="background-color:#234e52" class="text-white">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-<!-- Column 1: About WiA -->
 <div class="col-span-2 md:col-span-1">
-<span class="font-display text-lg text-[#81cebe] mb-4 block">Women in Aquaculture</span>
+<span class="font-display text-lg mb-4 block" style="color:#81cebe">Women in Aquaculture</span>
 <p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
 </div>
-
-<!-- Column 2: Quick Links -->
 <div>
 <h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
 <ul class="space-y-2 text-sm text-slate-400">
-<li><a href="./about.html" class="hover:text-[#81cebe] transition-colors">About us</a></li>
-<li><a href="./stories.html" class="hover:text-[#81cebe] transition-colors">Stories</a></li>
-<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Mentorship</a></li>
-<li><a href="./resources.html" class="hover:text-[#81cebe] transition-colors">Resources</a></li>
+<li><a href="./about.html" class="hover:text-white transition-colors">About us</a></li>
+<li><a href="./stories.html" class="hover:text-white transition-colors">Stories</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Mentorship</a></li>
+<li><a href="./resources.html" class="hover:text-white transition-colors">Resources</a></li>
 </ul>
 </div>
-
-<!-- Column 3: Get Involved -->
 <div>
 <h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
 <ul class="space-y-2 text-sm text-slate-400">
-<li><a href="./community.html" class="hover:text-[#81cebe] transition-colors">Join us!</a></li>
-<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Become a Mentor</a></li>
-<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Find a Mentor</a></li>
+<li><a href="./community.html" class="hover:text-white transition-colors">Join us!</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Become a Mentor</a></li>
+<li><a href="./donate.html" class="hover:text-white transition-colors">Donate</a></li>
+<li><a href="./contact.html" class="hover:text-white transition-colors">Contact</a></li>
 </ul>
 </div>
-
-<!-- Column 4: Connect -->
 <div>
 <h4 class="font-semibold text-white mb-4 text-sm">Connect</h4>
-<div class="flex gap-3 mb-4">
-<a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#81cebe] transition-colors" aria-label="LinkedIn">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-</a>
-<a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#81cebe] transition-colors" aria-label="Instagram">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-</a>
-<a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#81cebe] transition-colors" aria-label="Twitter/X">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-</a>
-</div>
 <p class="text-sm text-slate-400">hello@womeninaquaculture.org</p>
 </div>
 </div>
-
-<!-- Copyright bar -->
 <div class="border-t border-white/10 mt-12 pt-8 text-center">
 <p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p>
 </div>
 </div>
 </footer>
 
-<!-- ============================================================ -->
-<!-- SCRIPTS: Header scroll effect + mobile menu toggle            -->
-<!-- ============================================================ -->
 <script>
-// Header scroll effect: add shadow on scroll
-window.addEventListener("scroll", function() {
-  var header = document.getElementById("site-header");
-  if (window.scrollY > 20) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
-
-// Mobile menu toggle
-var menuButton = document.querySelector('[aria-label="Menu"]');
-if (menuButton) {
-  menuButton.addEventListener("click", function() {
-    var menu = document.getElementById("mobile-menu");
-    menu.classList.toggle("open");
-  });
-}
+window.addEventListener("scroll",function(){var h=document.getElementById("site-header");h.classList.toggle("scrolled",window.scrollY>20)});
+document.querySelector('[aria-label="Menu"]').addEventListener("click",function(){document.getElementById("mobile-menu").classList.toggle("open")});
 </script>
 </body>
 </html>
