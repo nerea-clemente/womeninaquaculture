@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expert Directory — Women in Aquaculture</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwindcss.config={theme:{extend:{colors:{
+teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
+seafoam:{50:"#f0fbf8",100:"#d8f3ec",200:"#b3e8db",300:"#81cebe",400:"#5bb8a5",500:"#3d9d8a"},
+navy:{700:"#2d6166",800:"#234e52",900:"#1a3b3e"},
+sand:{50:"#fcf8f2",100:"#f9f3e8",200:"#f0e6d2"},
+gold:{50:"#fffbf0",100:"#fff4d6",200:"#ffebb3",300:"#ffdd8c",400:"#ffd066",500:"#f0b922"},
+coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:"#e86b53"}
+}}}}
+</script>
+<style>
+  .font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }
+  .btn-coral { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#fb8c77; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+  .btn-coral:hover { background:#e86b53; }
+  .btn-coral-outline { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; border:2px solid #fb8c77; color:#fb8c77; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+  .btn-coral-outline:hover { background:#fb8c77; color:#fff; }
+  .btn-gold { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#ffdd8c; color:#234e52; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+  .btn-gold:hover { background:#ffd066; }
+  .btn-teal { display:inline-flex; align-items:center; justify-content:center; padding:0.625rem 1.5rem; background:#1b7e82; color:#fff; font-weight:600; border-radius:9999px; text-decoration:none; transition:all 0.2s; font-size:0.875rem; }
+  .btn-teal:hover { background:#176d70; }
+</style>
+</head>
+<body class="min-h-full flex flex-col" style="background-color:#fcf8f2">
+
+<!-- HEADER -->
+<header class="site-header fixed top-0 left-0 right-0 z-50" style="background-color:#fcf8f2" id="site-header">
+<nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<a href="./index.html" class="flex items-center"><span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span></a>
+<div class="hidden lg:flex items-center gap-1">
+<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">About us</a>
+<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Stories</a>
+<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Resources</a>
+<a href="./community.html" class="btn-coral px-4 py-2 text-sm">Join us!</a>
+</div>
+<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+<div class="mobile-menu lg:hidden border-t border-slate-100 py-4" id="mobile-menu">
+<div class="flex flex-col gap-1">
+<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About us</a>
+<a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Stories</a>
+<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Resources</a>
+<hr class="my-2 border-slate-100">
+<a href="./community.html" class="btn-coral mt-2 text-center">Join us!</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main class="flex-1 pt-16">
+
+<!-- HERO -->
+<section class="relative overflow-hidden flex items-center justify-center" style="min-height:40vh; background: linear-gradient(180deg, #0a6c6e 0%, #0e8589 20%, #1a9ea2 40%, #27b0b3 60%, #3cc0bf 80%, #5bcec6 100%);">
+<div class="absolute inset-0" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='600'%3E%3Cdefs%3E%3Cfilter id='t'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.015 0.005' numOctaves='5' seed='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.15 0'/%3E%3C/filter%3E%3C/defs%3E%3Crect width='100%25' height='100%25' filter='url(%23t)'/%3E%3C/svg%3E&quot;);background-size:cover"></div>
+<div class="absolute inset-0 opacity-20" style="background-image:repeating-linear-gradient(-15deg,transparent,transparent 40px,rgba(255,255,255,0.08) 40px,rgba(255,255,255,0.08) 42px),repeating-linear-gradient(-15deg,transparent,transparent 80px,rgba(255,255,255,0.12) 80px,rgba(255,255,255,0.12) 84px)"></div>
+<div class="absolute inset-0">
+<svg class="absolute top-[15%] w-full opacity-20" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 Q180,5 360,30 T720,30 T1080,30 T1440,30" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>
+<svg class="absolute top-[40%] w-full opacity-15" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M-100,35 Q120,8 340,35 T780,30 T1200,35 T1540,30" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+</div>
+<div class="absolute bottom-0 left-0 right-0">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full" preserveAspectRatio="none"><path fill="#fcf8f2" d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,120 L0,120Z"></path></svg>
+</div>
+<div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center py-16 z-10">
+<h1 class="font-display text-4xl lg:text-5xl text-white leading-tight mb-4">Speaker &amp; Expert Directory</h1>
+<p class="max-w-2xl mx-auto text-base text-white/80 leading-relaxed">Find and request women experts in aquaculture for panels, keynotes, conferences, media, and boards</p>
+</div>
+</section>
+
+<!-- INTRO -->
+<section class="py-16" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-slate-600 leading-relaxed text-base lg:text-lg mb-6">This directory connects event organisers, media, and boards with women experts across aquaculture. All profiles are self-submitted and reviewed before publishing.</p>
+<p class="font-display text-2xl lg:text-3xl" style="color:#1b7e82">No more all-male panels. The expertise is here.</p>
+</div>
+</section>
+
+<!-- FILTERS -->
+<section class="pb-8" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div id="experts-filters"></div>
+</div>
+</section>
+
+<!-- DIRECTORY -->
+<section class="py-16" style="background-color:#ffffff">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div id="experts-directory" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+</div>
+</section>
+
+<!-- SUBMIT YOUR PROFILE -->
+<section class="py-16 lg:py-24" style="background-color:#fcf8f2">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Join the Directory</h2>
+<p class="text-slate-600 leading-relaxed mb-4">Are you a woman working in aquaculture? Add your profile to be discoverable by event organisers, media, and boards.</p>
+<p class="text-sm text-slate-500">Profiles are self-submitted and reviewed by the WiA team before publishing. We aim to review submissions within 7 working days.</p>
+</div>
+
+<form class="bg-white rounded-3xl border-2 p-8 sm:p-10 space-y-6" style="border-color:#81cebe" onsubmit="event.preventDefault(); alert('Thank you! Your profile has been submitted for review.');">
+
+<div class="grid sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Name *</label>
+<input type="text" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="Your full name">
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Role *</label>
+<input type="text" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="e.g. Research Scientist">
+</div>
+</div>
+
+<div class="grid sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Organisation</label>
+<input type="text" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="Company, university, or independent">
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Country *</label>
+<input type="text" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="Your country">
+</div>
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Languages</label>
+<input type="text" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="e.g. English, Spanish, French">
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-3" style="color:#234e52">Disciplines *</label>
+<div class="flex flex-wrap gap-x-6 gap-y-3">
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Nutrition"> Nutrition</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Genetics"> Genetics</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Health"> Health</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Engineering"> Engineering</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="RAS"> RAS</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Certification"> Certification</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Policy"> Policy</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Finance"> Finance</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Processing"> Processing</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Sustainability"> Sustainability</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Entrepreneurship"> Entrepreneurship</label>
+</div>
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-3" style="color:#234e52">Formats willing to do</label>
+<div class="flex flex-wrap gap-x-6 gap-y-3">
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Keynote"> Keynote</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Panel"> Panel</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Technical session"> Technical session</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Board"> Board</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Media"> Media</label>
+<label class="flex items-center gap-2 text-sm text-slate-600"><input type="checkbox" class="rounded" value="Moderation"> Moderation</label>
+</div>
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Travel availability</label>
+<input type="text" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="e.g. Europe and remote, Global">
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Short bio *</label>
+<textarea required maxlength="200" rows="3" class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors resize-none" placeholder="A brief summary of your expertise and experience (max 200 characters)"></textarea>
+<p class="text-xs text-slate-400 mt-1">Max 200 characters</p>
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-2" style="color:#234e52">Email (private, not published) *</label>
+<input type="email" required class="w-full px-4 py-3 rounded-xl border-2 border-slate-200 text-sm focus:outline-none focus:border-teal-400 transition-colors" placeholder="your@email.com">
+<p class="text-xs text-slate-400 mt-1">Used for review communication only. Never displayed publicly.</p>
+</div>
+
+<div class="pt-4">
+<button type="submit" class="btn-coral px-8 py-3">Submit Profile</button>
+</div>
+</form>
+
+<div class="mt-8 text-center">
+<div class="inline-block bg-white rounded-2xl border-2 px-6 py-4" style="border-color:#ffdd8c">
+<p class="text-sm text-slate-600"><strong style="color:#234e52">Launch threshold:</strong> The directory will go live publicly once we have 40+ verified profiles. Currently accepting early submissions.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOR EVENT ORGANISERS -->
+<section class="py-16 lg:py-24" style="background-color:#ffffff">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-3xl sm:text-4xl mb-6" style="color:#234e52">For Conference &amp; Event Organisers</h2>
+<p class="text-slate-600 leading-relaxed mb-6">Looking for speakers for your next event? Browse the directory, use the filters to find the right expertise, and click 'Request this Expert' to reach out through WiA. We'll connect you directly.</p>
+<p class="text-slate-600 leading-relaxed">We're actively reaching out to programme committees at Aqua Nor, AquaVision, GOAL, WAS, and trade press to ensure this directory gets used.</p>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="py-16 lg:py-20 text-white text-center relative overflow-hidden" style="background-color:#234e52">
+<div class="absolute inset-0 opacity-10">
+<svg class="absolute top-0 left-0 w-full" viewBox="0 0 1440 200" preserveAspectRatio="none"><path d="M0,100 Q360,20 720,100 T1440,100 L1440,0 L0,0Z" fill="white"/></svg>
+</div>
+<div class="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+<h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-white mb-4">Add Your Voice</h2>
+<p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Join the directory and make your expertise visible to the global aquaculture community.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="#join-directory" class="btn-gold shadow-lg px-8 py-3" onclick="document.querySelector('form').scrollIntoView({behavior:'smooth'}); return false;">Submit Your Profile</a>
+<a href="#experts-directory" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white/40 text-white font-semibold rounded-full hover:bg-white/10 transition-colors" onclick="document.getElementById('experts-directory').scrollIntoView({behavior:'smooth'}); return false;">Browse Directory</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background-color:#234e52" class="text-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<span class="font-display text-lg mb-4 block" style="color:#81cebe">Women in Aquaculture</span>
+<p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./about.html" class="hover:text-white transition-colors">About us</a></li>
+<li><a href="./stories.html" class="hover:text-white transition-colors">Stories</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Mentorship</a></li>
+<li><a href="./resources.html" class="hover:text-white transition-colors">Resources</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./community.html" class="hover:text-white transition-colors">Join us!</a></li>
+<li><a href="./programmes.html" class="hover:text-white transition-colors">Become a Mentor</a></li>
+<li><a href="./donate.html" class="hover:text-white transition-colors">Donate</a></li>
+<li><a href="./contact.html" class="hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Connect</h4>
+<p class="text-sm text-slate-400">hello@womeninaquaculture.org</p>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center">
+<p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+window.addEventListener("scroll",function(){var h=document.getElementById("site-header");h.classList.toggle("scrolled",window.scrollY>20)});
+document.querySelector('[aria-label="Menu"]').addEventListener("click",function(){document.getElementById("mobile-menu").classList.toggle("open")});
+</script>
+<script src="js/experts.js"></script>
+</body>
+</html>

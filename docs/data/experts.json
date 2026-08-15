@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Dr. Ana Rivera",
+    "role": "Marine Biologist & Aquaculture Consultant",
+    "organisation": "Independent",
+    "country": "Spain",
+    "languages": ["English", "Spanish"],
+    "species": ["Seabass", "Seabream", "Shellfish"],
+    "discipline": ["Nutrition", "Sustainability", "Policy"],
+    "careerStage": "Senior (15+ years)",
+    "formats": ["Keynote", "Panel", "Technical session", "Media"],
+    "travel": "Europe and remote",
+    "bio": "Marine biologist with 18 years of experience in Mediterranean aquaculture. Specialist in sustainable feed development and environmental impact assessment."
+  },
+  {
+    "name": "Amina Okello",
+    "role": "Founder & CEO, AquaFeed Kenya",
+    "organisation": "AquaFeed Kenya",
+    "country": "Kenya",
+    "languages": ["English", "Swahili"],
+    "species": ["Tilapia", "Catfish"],
+    "discipline": ["Entrepreneurship", "Processing", "Finance"],
+    "careerStage": "Mid-career (5-15 years)",
+    "formats": ["Panel", "Technical session", "Moderation"],
+    "travel": "Africa and remote",
+    "bio": "Founded Kenya's first women-led fish feed company, now supplying over 200 smallholder farmers. Advocate for women's economic empowerment through aquaculture."
+  },
+  {
+    "name": "Dr. Mei Lin Chen",
+    "role": "Research Director, Shrimp Genetics Lab",
+    "organisation": "National University of Singapore",
+    "country": "Singapore",
+    "languages": ["English", "Mandarin"],
+    "species": ["Shrimp", "Prawns"],
+    "discipline": ["Genetics", "Health", "RAS"],
+    "careerStage": "Senior (15+ years)",
+    "formats": ["Keynote", "Technical session", "Board"],
+    "travel": "Global",
+    "bio": "Leading researcher in shrimp genetics and disease resistance. Published over 80 peer-reviewed papers. Advisor to FAO and WorldFish on aquaculture genetics."
+  },
+  {
+    "name": "Elena Vásquez",
+    "role": "Conservation & Aquaculture Manager",
+    "organisation": "Fundación Conservar Ecuador",
+    "country": "Ecuador",
+    "languages": ["Spanish", "English"],
+    "species": ["Shrimp", "Mangrove ecosystems"],
+    "discipline": ["Sustainability", "Certification", "Policy"],
+    "careerStage": "Mid-career (5-15 years)",
+    "formats": ["Panel", "Technical session", "Media"],
+    "travel": "Latin America and remote",
+    "bio": "Combines commercial shrimp aquaculture with mangrove restoration along the Ecuadorian coast. Pioneer in integrated mangrove-aquaculture systems."
+  },
+  {
+    "name": "Ingrid Haugen",
+    "role": "Head of Sustainability, Nordic Aquaculture Group",
+    "organisation": "Nordic Aquaculture Group",
+    "country": "Norway",
+    "languages": ["English", "Norwegian"],
+    "species": ["Salmon", "Trout"],
+    "discipline": ["Certification", "Engineering", "Policy"],
+    "careerStage": "Senior (15+ years)",
+    "formats": ["Keynote", "Panel", "Board", "Media"],
+    "travel": "Global",
+    "bio": "Leads sustainability strategy for one of Norway's largest aquaculture companies. Board member of ASC. Champion of women in leadership in Nordic aquaculture."
+  },
+  {
+    "name": "Dr. Lina Tan",
+    "role": "Seaweed Cultivation Scientist",
+    "organisation": "University of the Philippines",
+    "country": "Philippines",
+    "languages": ["English", "Filipino", "Cebuano"],
+    "species": ["Seaweed", "Sea cucumber"],
+    "discipline": ["Nutrition", "Sustainability", "Processing"],
+    "careerStage": "Mid-career (5-15 years)",
+    "formats": ["Technical session", "Panel", "Moderation"],
+    "travel": "Asia-Pacific and remote",
+    "bio": "Pioneering sustainable seaweed cultivation methods in the Philippines. Leads community training programmes for women seaweed farmers."
+  }
+]
