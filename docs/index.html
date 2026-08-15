@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full antialiased">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women in Aquaculture — Empowering Women. Transforming Aquaculture.</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwindcss.config={theme:{extend:{colors:{
+teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
+seafoam:{50:"#f0fbf8",100:"#d8f3ec",200:"#b3e8db",300:"#81cebe",400:"#5bb8a5",500:"#3d9d8a"},
+navy:{700:"#2d6166",800:"#234e52",900:"#1a3b3e"},
+sand:{50:"#fcf8f2",100:"#f9f3e8",200:"#f0e6d2"},
+gold:{50:"#fffbf0",100:"#fff4d6",200:"#ffebb3",300:"#ffdd8c",400:"#ffd066",500:"#f0b922"},
+coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:"#e86b53"}
+}}}}
+</script>
+</head>
+<body class="min-h-full flex flex-col">
+
+<!-- HEADER -->
+<header class="site-header" id="site-header">
+<nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 lg:h-20 items-center justify-between">
+<a href="./index.html" class="flex items-center gap-2.5 group">
+<div class="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center group-hover:bg-teal-600 transition-colors">
+<svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M6 12c1-3 3-5 6-5s5 2 6 5"/></svg>
+</div>
+<span class="font-display text-lg" style="color:#234e52">WiA</span>
+</a>
+<div class="hidden lg:flex items-center gap-1">
+<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">About</a>
+<a href="./community.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Community</a>
+<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Stories</a>
+<a href="./events.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Events</a>
+<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Programmes</a>
+<a href="./partners.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Partners</a>
+<a href="./get-involved.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Get Involved</a>
+</div>
+<div class="hidden lg:flex items-center gap-3">
+<a href="./donate.html" class="text-sm font-medium text-teal-500 hover:text-teal-600">Donate</a>
+<a href="./community.html" class="btn-primary">Join WiA</a>
+</div>
+<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-500" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+<svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+</div>
+<div class="mobile-menu lg:hidden border-t border-slate-100 py-4" id="mobile-menu">
+<div class="flex flex-col gap-1">
+<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">About</a>
+<a href="./community.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Community</a>
+<a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Stories</a>
+<a href="./events.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Events</a>
+<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Programmes</a>
+<a href="./partners.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Partners</a>
+<a href="./get-involved.html" class="px-3 py-2.5 text-base font-medium text-slate-700 hover:text-teal-500 rounded-lg">Get Involved</a>
+<hr class="my-2 border-slate-100">
+<a href="./donate.html" class="px-3 py-2.5 text-base font-medium text-teal-500">Donate</a>
+<a href="./community.html" class="mt-2 btn-primary justify-center">Join WiA</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main class="flex-1">
+
+<!-- HERO -->
+<section class="relative overflow-hidden min-h-[85vh] flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-b from-teal-600 via-teal-500 to-seafoam-300">
+<div class="absolute inset-0 opacity-20" style="background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.15' d='M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,128C672,117,768,139,864,165.3C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L0,320Z'/%3E%3C/svg%3E&quot;);background-repeat:no-repeat;background-position:bottom;background-size:cover"></div>
+<div class="absolute inset-0 bg-teal-900/20"></div>
+</div>
+<div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center py-24">
+<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mb-6 animate-fade-in-up">
+Empowering women.<br><span class="underline-wave">Transforming aquaculture.</span>
+</h1>
+<p class="max-w-xl mx-auto text-base sm:text-lg text-white/90 leading-relaxed mb-10 animate-fade-in-up animation-delay-100">A global platform for women in aquaculture.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-200">
+<a href="./community.html" class="btn-primary border border-white/20 shadow-lg">Join the WiA</a>
+<a href="./get-involved.html" class="btn-outline">Get Involved</a>
+</div>
+</div>
+</section>
+
+<!-- IMPACT AT A GLANCE -->
+<section class="py-20 bg-sand-50">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-8 mb-14 items-end">
+<div><h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-teal-500 leading-tight">Impact at a<br>Glance</h2></div>
+<div><p class="text-slate-600 leading-relaxed text-base lg:text-lg">Women make up a vital part of the aquaculture workforce, but their stories, challenges, and leadership often go unseen. <strong style="color:#234e52">We're here to change that.</strong></p></div>
+</div>
+<div class="grid sm:grid-cols-3 gap-6">
+<div class="bg-white rounded-2xl border border-teal-200/60 p-8 text-center card-hover">
+<p class="text-xs font-semibold tracking-wider uppercase text-navy-800 mb-4">Workforce Representation</p>
+<p class="font-display text-5xl sm:text-6xl text-teal-500 mb-3">50%</p>
+<p class="text-sm text-slate-500 leading-relaxed">Half of the workforce is made up of women.</p>
+</div>
+<div class="bg-white rounded-2xl border border-teal-200/60 p-8 text-center card-hover">
+<p class="text-xs font-semibold tracking-wider uppercase text-navy-800 mb-4">Women in Leadership</p>
+<p class="font-display text-5xl sm:text-6xl text-teal-500 mb-3">10%</p>
+<p class="text-sm text-slate-500 leading-relaxed">Only around 10% of leadership positions are held by women.</p>
+</div>
+<div class="bg-white rounded-2xl border border-teal-200/60 p-8 text-center card-hover">
+<p class="text-xs font-semibold tracking-wider uppercase text-navy-800 mb-4">Community Members</p>
+<p class="font-display text-5xl sm:text-6xl text-teal-500 mb-3">500</p>
+<p class="text-sm text-slate-500 leading-relaxed">Women connected through the WiA community.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FEATURED STORY -->
+<section class="py-20 bg-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<p class="text-sm font-semibold tracking-wider uppercase text-navy-800 mb-10 text-center">Meet the women shaping aquaculture</p>
+<div class="grid md:grid-cols-2 gap-0 bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm max-w-5xl mx-auto">
+<div class="bg-gradient-to-br from-seafoam-100 via-teal-50 to-seafoam-200 flex items-center justify-center aspect-square md:aspect-auto p-8">
+<div class="w-full h-full rounded-2xl bg-gradient-to-b from-teal-300/30 to-seafoam-200/50 flex items-end justify-center overflow-hidden">
+<svg class="w-48 h-48 text-teal-300/40" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+</div>
+</div>
+<div class="p-8 sm:p-10 lg:p-12 flex flex-col justify-center">
+<h3 class="font-display text-3xl sm:text-4xl text-coral-400 mb-4">Meet Maria</h3>
+<p class="text-slate-600 leading-relaxed mb-6">After 15 years in marine biology research, Maria made the bold leap into commercial shrimp farming in coastal India. Today she manages one of the region's most sustainable operations — and mentors the next generation of women in aquaculture.</p>
+<a href="./stories.html" class="btn-coral-outline self-start">Read her story</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="py-20 bg-sand-50">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<p class="text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">What We Do</p>
+<h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Building a Stronger Future for Women in Aquaculture</h2>
+<p class="max-w-2xl mx-auto text-base lg:text-lg text-slate-600 leading-relaxed">Through visibility, community, learning and opportunity, we are creating the platform that women in aquaculture deserve.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-white border border-teal-200/60 rounded-2xl p-8 card-hover">
+<h3 class="font-display text-2xl text-teal-500 mb-3">Connect</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Bringing women together across borders, disciplines and career stages through a vibrant global network.</p>
+</div>
+<div class="bg-white border border-coral-200/60 rounded-2xl p-8 card-hover">
+<h3 class="font-display text-2xl text-teal-500 mb-3">Celebrate</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Telling the stories of women who are shaping aquaculture — from the farm to the boardroom.</p>
+</div>
+<div class="bg-white border border-seafoam-200 rounded-2xl p-8 card-hover">
+<h3 class="font-display text-2xl text-teal-500 mb-3">Support</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Providing mentoring, resources and peer support to help women thrive at every stage of their journey.</p>
+</div>
+<div class="bg-white border border-gold-300/60 rounded-2xl p-8 card-hover">
+<h3 class="font-display text-2xl text-teal-500 mb-3">Develop</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Creating opportunities for learning, leadership and career growth through webinars, programmes and events.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TEAM PREVIEW -->
+<section class="py-20 bg-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<p class="text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">Our Team</p>
+<h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Meet the People Behind WiA</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-teal-100 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Dr. Ana Rivera</h3><p class="text-sm text-teal-500 font-medium">Founder &amp; CEO</p></div>
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-seafoam-100 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Ingrid Haugen</h3><p class="text-sm text-teal-500 font-medium">Head of Partnerships</p></div>
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-sand-100 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Fatima Al-Rashid</h3><p class="text-sm text-teal-500 font-medium">Community Director</p></div>
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-coral-50 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Dr. Mei Lin Chen</h3><p class="text-sm text-teal-500 font-medium">Research Lead</p></div>
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-teal-50 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Amara Osei</h3><p class="text-sm text-teal-500 font-medium">Mentoring Lead</p></div>
+<div class="text-center group"><div class="w-28 h-28 lg:w-32 lg:h-32 mx-auto rounded-full bg-seafoam-50 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform ring-4 ring-white shadow-sm"><svg class="w-12 h-12 text-teal-300/50" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></div><h3 class="font-semibold text-navy-800 text-base">Sofia Bergstr&ouml;m</h3><p class="text-sm text-teal-500 font-medium">Events &amp; Content</p></div>
+</div>
+<div class="text-center mt-10"><a href="./about.html#team" class="text-sm font-semibold text-teal-500 hover:text-teal-600">Meet the full team &rarr;</a></div>
+</div>
+</section>
+
+<!-- MENTORING -->
+<section class="py-20 bg-navy-800 text-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-white leading-tight mb-6">Mentorship that works</h2>
+<p class="text-seafoam-200 text-lg leading-relaxed mb-6">Our mentoring programme pairs early-career women with experienced leaders across aquaculture. Whether you are a student, a farmer or a researcher — there is space for you to grow here.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-start gap-3"><svg class="w-5 h-5 text-gold-300 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span class="text-white/80">One-on-one mentoring with industry leaders</span></li>
+<li class="flex items-start gap-3"><svg class="w-5 h-5 text-gold-300 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span class="text-white/80">Peer support groups by discipline and region</span></li>
+<li class="flex items-start gap-3"><svg class="w-5 h-5 text-gold-300 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span class="text-white/80">Leadership development workshops</span></li>
+<li class="flex items-start gap-3"><svg class="w-5 h-5 text-gold-300 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg><span class="text-white/80">Career guidance and networking opportunities</span></li>
+</ul>
+<a href="./programmes.html" class="btn-gold">Explore Programmes</a>
+</div>
+<div class="bg-white/5 rounded-3xl aspect-[4/3] flex items-center justify-center border border-white/10">
+<div class="text-center text-white/30">
+<svg class="w-20 h-20 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
+<p class="text-sm font-medium text-white/40">Mentoring Programme</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- UPCOMING EVENT -->
+<section class="py-20 bg-sand-50">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<p class="text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">Upcoming Event</p>
+<h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Learn, Grow, Connect</h2>
+</div>
+<div class="max-w-2xl mx-auto bg-white rounded-2xl p-6 border border-slate-200 card-hover">
+<div class="flex items-start gap-3 mb-4">
+<div class="w-14 h-14 rounded-xl bg-teal-50 flex flex-col items-center justify-center border border-teal-100">
+<span class="text-xs font-semibold text-teal-600 uppercase leading-none">Apr</span>
+<span class="text-lg font-bold text-navy-800 leading-none mt-0.5">24</span>
+</div>
+<div><p class="text-sm text-slate-500">Apr 24</p><p class="text-xs text-slate-400">14:00 CET / 09:00 EST</p></div>
+</div>
+<h3 class="font-semibold text-lg text-navy-800 mb-2">Breaking Barriers: Women in Aquaculture Leadership</h3>
+<p class="text-sm text-slate-600 leading-relaxed mb-4">An honest conversation with four women leading aquaculture companies across three continents. How did they get there? What needs to change?</p>
+<p class="text-sm text-slate-500 mb-4"><span class="font-medium text-navy-800">Speaker:</span> Panel: Dr. Ana Rivera, Ingrid Haugen, Mei Lin Chen, Amara Osei</p>
+<a href="./events.html" class="btn-primary">Register Now</a>
+</div>
+</div>
+</section>
+
+<!-- GET INVOLVED -->
+<section class="py-20 bg-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<p class="text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">Get Involved</p>
+<h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Be Part of the Change</h2>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<a href="./community.html" class="group block p-6 rounded-2xl bg-white border border-teal-200/60 card-hover"><h3 class="font-semibold text-lg text-navy-800 mb-2 group-hover:text-teal-500 transition-colors">Join the Community</h3><p class="text-sm text-slate-500 leading-relaxed">Connect with women across aquaculture worldwide.</p></a>
+<a href="./partners.html" class="group block p-6 rounded-2xl bg-white border border-seafoam-200 card-hover"><h3 class="font-semibold text-lg text-navy-800 mb-2 group-hover:text-teal-500 transition-colors">Become a Partner</h3><p class="text-sm text-slate-500 leading-relaxed">Align your brand with the future of aquaculture.</p></a>
+<a href="./donate.html" class="group block p-6 rounded-2xl bg-white border border-gold-200 card-hover"><h3 class="font-semibold text-lg text-navy-800 mb-2 group-hover:text-teal-500 transition-colors">Donate</h3><p class="text-sm text-slate-500 leading-relaxed">Your contribution funds mentoring, events and community building.</p></a>
+<a href="./get-involved.html#share-story" class="group block p-6 rounded-2xl bg-white border border-coral-200 card-hover"><h3 class="font-semibold text-lg text-navy-800 mb-2 group-hover:text-teal-500 transition-colors">Share Your Story</h3><p class="text-sm text-slate-500 leading-relaxed">Inspire others by sharing your journey in aquaculture.</p></a>
+</div>
+</div>
+</section>
+
+<!-- PARTNERS BAR -->
+<section class="py-14 bg-sand-50 border-t border-slate-100">
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+<p class="text-center text-xs font-semibold text-slate-400 tracking-wider uppercase mb-8">Supported by industry leaders</p>
+<div class="flex flex-wrap items-center justify-center gap-8 sm:gap-14">
+<span class="text-sm font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">AquaCorp</span>
+<span class="text-sm font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">NordicFeed</span>
+<span class="text-sm font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">OceanTech</span>
+<span class="text-sm font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">BluHarvest</span>
+<span class="text-sm font-semibold text-slate-300 tracking-wide hover:text-teal-500 transition-colors cursor-pointer">SeaVentures</span>
+</div>
+</div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="py-20 bg-white">
+<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Stay in the Loop</h2>
+<p class="text-slate-600 mb-8">Get the latest stories, events and opportunities delivered to your inbox. No spam — just the good stuff.</p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault()">
+<input type="email" placeholder="Your email address" class="flex-1 px-5 py-3.5 rounded-full border border-slate-200 bg-gray-50 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500" required>
+<button type="submit" class="btn-primary whitespace-nowrap">Subscribe</button>
+</form>
+<p class="text-xs text-slate-400 mt-4">By subscribing, you agree to our privacy policy. Unsubscribe at any time.</p>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bg-gradient-to-br from-teal-500 to-teal-700 relative overflow-hidden">
+<div class="absolute inset-0"><div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div><div class="absolute -bottom-20 -left-20 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div></div>
+<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+<h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Ready to Make a Difference?</h2>
+<p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Join Women in Aquaculture and become part of a global movement supporting women across the industry.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a href="./community.html" class="btn-white shadow-lg">Join WiA Community</a>
+<a href="./about.html" class="btn-outline">Learn More</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navy-800 text-white">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="col-span-2 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center"><svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div>
+<span class="font-display text-lg">WiA</span>
+</div>
+<p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./about.html" class="hover:text-seafoam-300 transition-colors">About</a></li>
+<li><a href="./stories.html" class="hover:text-seafoam-300 transition-colors">Stories</a></li>
+<li><a href="./events.html" class="hover:text-seafoam-300 transition-colors">Events</a></li>
+<li><a href="./programmes.html" class="hover:text-seafoam-300 transition-colors">Programmes</a></li>
+<li><a href="./resources.html" class="hover:text-seafoam-300 transition-colors">Resources</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./community.html" class="hover:text-seafoam-300 transition-colors">Join Community</a></li>
+<li><a href="./partners.html" class="hover:text-seafoam-300 transition-colors">Become a Partner</a></li>
+<li><a href="./donate.html" class="hover:text-seafoam-300 transition-colors">Donate</a></li>
+<li><a href="./get-involved.html" class="hover:text-seafoam-300 transition-colors">Volunteer</a></li>
+<li><a href="./contact.html" class="hover:text-seafoam-300 transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Connect</h4>
+<div class="flex gap-3 mb-4">
+<a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition-colors" aria-label="LinkedIn"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-teal-500 transition-colors" aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+</div>
+<p class="text-sm text-slate-400">hello@womeninaquaculture.org</p>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center">
+<p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+<script>
+window.addEventListener("scroll",function(){document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>20)});
+</script>
+</body>
+</html>
