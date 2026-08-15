@@ -6,6 +6,7 @@
 <title>Events — Women in Aquaculture</title>
 <link rel="stylesheet" href="css/styles.css">
 <script src="https://cdn.tailwindcss.com"></script>
+<style>.font-display { font-family: 'Thalassa', 'Georgia', serif; font-style: italic; }</style>
 <script>
 tailwindcss.config={theme:{extend:{colors:{
 teal:{50:"#eefbfb",100:"#d4f4f5",200:"#a8e8ea",300:"#6dd5d8",400:"#34b8bc",500:"#1b7e82",600:"#176d70",700:"#135b5e",800:"#0f494c",900:"#0b3739"},
@@ -17,104 +18,120 @@ coral:{50:"#fff5f2",100:"#ffe8e1",200:"#ffc9b8",300:"#fba997",400:"#fb8c77",500:
 }}}}
 </script>
 </head>
-<body class="min-h-full flex flex-col">
-<header class="site-header" id="site-header">
+<body class="min-h-full flex flex-col" style="background-color:#fcf8f2">
+
+<header class="site-header fixed top-0 left-0 right-0 z-50" style="background-color:#fcf8f2" id="site-header">
 <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="flex h-16 lg:h-20 items-center justify-between">
-<a href="./index.html" class="flex items-center gap-2.5 group">
-<div class="w-9 h-9 rounded-full bg-teal-500 flex items-center justify-center group-hover:bg-teal-600 transition-colors">
-<svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M6 12c1-3 3-5 6-5s5 2 6 5"/></svg>
-</div>
-<span class="font-display text-lg" style="color:#234e52">WiA</span>
+<div class="flex h-16 items-center justify-between">
+<a href="./index.html" class="flex items-center group">
+<span class="font-display text-lg" style="color:#234e52">Women in Aquaculture</span>
 </a>
 <div class="hidden lg:flex items-center gap-1">
-<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">About</a>
-<a href="./community.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Community</a>
-<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Stories</a>
-<a href="./events.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Events</a>
-<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Programmes</a>
-<a href="./partners.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Partners</a>
-<a href="./get-involved.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50">Get Involved</a>
+<a href="./about.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">About us</a>
+<a href="./stories.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Stories</a>
+<a href="./programmes.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-teal-500 rounded-lg hover:bg-teal-50 transition-colors">Resources</a>
+<a href="./community.html" class="px-4 py-2 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Join us!</a>
 </div>
-<div class="hidden lg:flex items-center gap-3">
-<a href="./donate.html" class="text-sm font-medium text-teal-500 hover:text-teal-600">Donate</a>
-<a href="./community.html" class="btn-primary">Join WiA</a>
-</div>
-<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600 hover:text-teal-500" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
+<button type="button" class="lg:hidden p-2 -mr-2 text-slate-600" onclick="document.getElementById('mobile-menu').classList.toggle('open')" aria-label="Menu">
 <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
 </button>
 </div>
 <div class="mobile-menu lg:hidden border-t border-slate-100 py-4" id="mobile-menu">
 <div class="flex flex-col gap-1">
-<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About</a>
-<a href="./community.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Community</a>
+<a href="./about.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">About us</a>
 <a href="./stories.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Stories</a>
-<a href="./events.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Events</a>
-<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Programmes</a>
-<a href="./partners.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Partners</a>
-<a href="./get-involved.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Get Involved</a>
+<a href="./programmes.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Mentorship</a>
+<a href="./resources.html" class="px-3 py-2.5 text-base font-medium text-slate-700 rounded-lg">Resources</a>
 <hr class="my-2 border-slate-100">
-<a href="./donate.html" class="px-3 py-2.5 text-base font-medium text-teal-500">Donate</a>
-<a href="./community.html" class="mt-2 btn-primary justify-center">Join WiA</a>
+<a href="./community.html" class="mt-2 px-4 py-2.5 text-base font-semibold text-white rounded-full text-center" style="background-color:#fb8c77">Join us!</a>
 </div>
 </div>
 </nav>
 </header>
-<main class="flex-1 pt-16 lg:pt-20">
-<section class="relative overflow-hidden bg-gradient-to-br from-teal-600 via-teal-500 to-teal-700 py-24 lg:py-36">
-<div class="absolute inset-0"><div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-white/5 blur-3xl"></div></div>
-<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-<p class="text-seafoam-200 text-sm font-semibold tracking-wider uppercase mb-4">Events</p>
-<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">Learn, Connect, Grow</h1>
-<p class="max-w-2xl mx-auto text-lg text-white/80 leading-relaxed">Webinars, panels and networking events designed for women in aquaculture.</p>
+
+<main class="flex-1 pt-16">
+
+<section class="py-20 lg:py-28" style="background-color:#1b7e82">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="font-display text-4xl sm:text-5xl text-white leading-tight mb-4">Events</h1>
+<p class="max-w-2xl mx-auto text-lg text-white/80">Learn, connect, grow</p>
 </div>
 </section>
 
-<section class="py-20 bg-sand-50">
+<section class="py-20" style="background-color:#fcf8f2">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><p class="text-xs font-semibold tracking-wider uppercase text-teal-500 mb-3">Upcoming</p><h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Upcoming Events</h2></div>
+<div class="text-center mb-12">
+<p class="text-xs font-semibold tracking-wider uppercase mb-3" style="color:#1b7e82">Upcoming</p>
+<h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Upcoming Events</h2>
+</div>
 <div class="grid sm:grid-cols-3 gap-6">
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl bg-teal-50 flex flex-col items-center justify-center border border-teal-100"><span class="text-xs font-semibold text-teal-600 uppercase">Apr</span><span class="text-lg font-bold text-navy-800">24</span></div><div><p class="text-sm text-slate-500">Apr 24, 2026</p><p class="text-xs text-slate-400">14:00 CET</p></div></div><h3 class="font-semibold text-lg text-navy-800 mb-2">Breaking Barriers: Women in Leadership</h3><p class="text-sm text-slate-600 mb-4">Panel discussion with four women leading aquaculture companies.</p><a href="#" class="btn-primary text-center w-full justify-center">Register Now</a></div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl bg-teal-50 flex flex-col items-center justify-center border border-teal-100"><span class="text-xs font-semibold text-teal-600 uppercase">May</span><span class="text-lg font-bold text-navy-800">15</span></div><div><p class="text-sm text-slate-500">May 15, 2026</p><p class="text-xs text-slate-400">10:00 CET</p></div></div><h3 class="font-semibold text-lg text-navy-800 mb-2">Sustainable Shrimp Farming Workshop</h3><p class="text-sm text-slate-600 mb-4">Hands-on workshop on sustainable practices in shrimp aquaculture.</p><a href="#" class="btn-primary text-center w-full justify-center">Register Now</a></div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl bg-teal-50 flex flex-col items-center justify-center border border-teal-100"><span class="text-xs font-semibold text-teal-600 uppercase">Jun</span><span class="text-lg font-bold text-navy-800">10</span></div><div><p class="text-sm text-slate-500">Jun 10-12, 2026</p><p class="text-xs text-slate-400">Bergen, Norway</p></div></div><h3 class="font-semibold text-lg text-navy-800 mb-2">WiA Annual Conference 2026</h3><p class="text-sm text-slate-600 mb-4">Three days of talks, workshops and networking in Bergen.</p><a href="#" class="btn-primary text-center w-full justify-center">Register Now</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#ffffff; border-color:#81cebe"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl flex flex-col items-center justify-center border-2" style="background-color:#fcf8f2; border-color:#81cebe"><span class="text-xs font-semibold uppercase" style="color:#1b7e82">Apr</span><span class="text-lg font-bold" style="color:#234e52">24</span></div><div><p class="text-sm text-slate-500">Apr 24, 2026</p><p class="text-xs text-slate-400">14:00 CET</p></div></div><h3 class="font-semibold text-lg mb-2" style="color:#234e52">Breaking Barriers: Women in Leadership</h3><p class="text-sm text-slate-600 mb-4">Panel discussion with four women leading aquaculture companies.</p><a href="#" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Register Now</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#ffffff; border-color:#fb8c77"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl flex flex-col items-center justify-center border-2" style="background-color:#fcf8f2; border-color:#fb8c77"><span class="text-xs font-semibold uppercase" style="color:#1b7e82">May</span><span class="text-lg font-bold" style="color:#234e52">15</span></div><div><p class="text-sm text-slate-500">May 15, 2026</p><p class="text-xs text-slate-400">10:00 CET</p></div></div><h3 class="font-semibold text-lg mb-2" style="color:#234e52">Sustainable Shrimp Farming Workshop</h3><p class="text-sm text-slate-600 mb-4">Hands-on workshop on sustainable practices in shrimp aquaculture.</p><a href="#" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Register Now</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#ffffff; border-color:#ffdd8c"><div class="flex items-center gap-3 mb-4"><div class="w-14 h-14 rounded-xl flex flex-col items-center justify-center border-2" style="background-color:#fcf8f2; border-color:#ffdd8c"><span class="text-xs font-semibold uppercase" style="color:#1b7e82">Jun</span><span class="text-lg font-bold" style="color:#234e52">10</span></div><div><p class="text-sm text-slate-500">Jun 10-12, 2026</p><p class="text-xs text-slate-400">Bergen, Norway</p></div></div><h3 class="font-semibold text-lg mb-2" style="color:#234e52">WiA Annual Conference 2026</h3><p class="text-sm text-slate-600 mb-4">Three days of talks, workshops and networking in Bergen.</p><a href="#" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full transition-colors" style="background-color:#fb8c77">Register Now</a></div>
 </div>
 </div>
 </section>
-<section class="py-20 bg-white">
+
+<section class="py-20" style="background-color:#ffffff">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl text-navy-800 mb-4">Past Events — Watch Replays</h2></div>
+<div class="text-center mb-12"><h2 class="font-display text-3xl sm:text-4xl mb-4" style="color:#234e52">Past Events — Watch Replays</h2></div>
 <div class="grid sm:grid-cols-3 gap-6">
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><span class="px-2.5 py-1 text-xs font-semibold bg-slate-100 text-slate-500 rounded-full">Replay</span><h3 class="font-semibold text-lg text-navy-800 mt-3 mb-2">Women in Marine Science</h3><p class="text-sm text-slate-600 mb-4">March 2026 — A deep dive into women's contributions to marine research.</p><a href="#" class="text-sm font-semibold text-teal-500 hover:text-teal-600">Watch Replay &rarr;</a></div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><span class="px-2.5 py-1 text-xs font-semibold bg-slate-100 text-slate-500 rounded-full">Replay</span><h3 class="font-semibold text-lg text-navy-800 mt-3 mb-2">From Research to Business</h3><p class="text-sm text-slate-600 mb-4">February 2026 — Turning research into commercial aquaculture ventures.</p><a href="#" class="text-sm font-semibold text-teal-500 hover:text-teal-600">Watch Replay &rarr;</a></div>
-<div class="bg-white rounded-2xl p-6 border border-slate-200 card-hover"><span class="px-2.5 py-1 text-xs font-semibold bg-slate-100 text-slate-500 rounded-full">Replay</span><h3 class="font-semibold text-lg text-navy-800 mt-3 mb-2">Mentoring Kickoff 2026</h3><p class="text-sm text-slate-600 mb-4">January 2026 — Launch event for the 2026 mentoring cohort.</p><a href="#" class="text-sm font-semibold text-teal-500 hover:text-teal-600">Watch Replay &rarr;</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#fcf8f2; border-color:#81cebe"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#81cebe; color:#234e52">Replay</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Women in Marine Science</h3><p class="text-sm text-slate-600 mb-4">March 2026 — A deep dive into women's contributions to marine research.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Watch Replay &rarr;</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#fcf8f2; border-color:#fb8c77"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#fb8c77; color:#ffffff">Replay</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">From Research to Business</h3><p class="text-sm text-slate-600 mb-4">February 2026 — Turning research into commercial aquaculture ventures.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Watch Replay &rarr;</a></div>
+<div class="rounded-2xl p-6 border-2" style="background-color:#fcf8f2; border-color:#ffdd8c"><span class="px-2.5 py-1 text-xs font-semibold rounded-full" style="background-color:#ffdd8c; color:#234e52">Replay</span><h3 class="font-semibold text-lg mt-3 mb-2" style="color:#234e52">Mentoring Kickoff 2026</h3><p class="text-sm text-slate-600 mb-4">January 2026 — Launch event for the 2026 mentoring cohort.</p><a href="#" class="text-sm font-semibold hover:underline" style="color:#1b7e82">Watch Replay &rarr;</a></div>
 </div>
 </div>
 </section>
-<section class="bg-gradient-to-br from-teal-500 to-teal-700 relative overflow-hidden">
-<div class="absolute inset-0"><div class="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/5 blur-3xl"></div></div>
-<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+
+<section class="py-16 lg:py-20" style="background-color:#1b7e82">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
 <h2 class="font-display text-3xl sm:text-4xl text-white mb-4">Join Our Community</h2>
 <p class="max-w-xl mx-auto text-lg text-white/80 mb-8">Be part of a global movement supporting women in aquaculture.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-<a href="./community.html" class="btn-white shadow-lg">Join WiA</a>
-<a href="./contact.html" class="btn-outline">Contact Us</a>
+<a href="./community.html" class="px-8 py-3 text-sm font-semibold rounded-full shadow-lg transition-colors" style="background-color:#fb8c77; color:#ffffff">Join Us</a>
+<a href="./contact.html" class="px-8 py-3 text-sm font-semibold rounded-full border-2 border-white/30 text-white hover:bg-white/10 transition-colors">Contact Us</a>
 </div>
 </div>
 </section>
+
 </main>
-<footer class="bg-navy-800 text-white">
+
+<footer style="background-color:#234e52" class="text-white">
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
 <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 <div class="col-span-2 md:col-span-1">
-<div class="flex items-center gap-2 mb-4"><div class="w-8 h-8 rounded-full bg-teal-500 flex items-center justify-center"><svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/></svg></div><span class="font-display text-lg">WiA</span></div>
+<span class="font-display text-lg text-white mb-4 block">Women in Aquaculture</span>
 <p class="text-sm text-slate-400 leading-relaxed">Empowering women and transforming aquaculture through visibility, community and opportunity.</p>
 </div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4><ul class="space-y-2 text-sm text-slate-400"><li><a href="./about.html" class="hover:text-seafoam-300">About</a></li><li><a href="./stories.html" class="hover:text-seafoam-300">Stories</a></li><li><a href="./events.html" class="hover:text-seafoam-300">Events</a></li><li><a href="./programmes.html" class="hover:text-seafoam-300">Programmes</a></li><li><a href="./resources.html" class="hover:text-seafoam-300">Resources</a></li></ul></div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4><ul class="space-y-2 text-sm text-slate-400"><li><a href="./community.html" class="hover:text-seafoam-300">Join Community</a></li><li><a href="./partners.html" class="hover:text-seafoam-300">Become a Partner</a></li><li><a href="./donate.html" class="hover:text-seafoam-300">Donate</a></li><li><a href="./contact.html" class="hover:text-seafoam-300">Contact</a></li></ul></div>
-<div><h4 class="font-semibold text-white mb-4 text-sm">Connect</h4><p class="text-sm text-slate-400">hello@womeninaquaculture.org</p></div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Quick Links</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./about.html" class="hover:text-[#81cebe] transition-colors">About us</a></li>
+<li><a href="./stories.html" class="hover:text-[#81cebe] transition-colors">Stories</a></li>
+<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Mentorship</a></li>
+<li><a href="./resources.html" class="hover:text-[#81cebe] transition-colors">Resources</a></li>
+</ul>
 </div>
-<div class="border-t border-white/10 mt-12 pt-8 text-center"><p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p></div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Get Involved</h4>
+<ul class="space-y-2 text-sm text-slate-400">
+<li><a href="./community.html" class="hover:text-[#81cebe] transition-colors">Join us!</a></li>
+<li><a href="./programmes.html" class="hover:text-[#81cebe] transition-colors">Become a Mentor</a></li>
+<li><a href="./donate.html" class="hover:text-[#81cebe] transition-colors">Donate</a></li>
+<li><a href="./contact.html" class="hover:text-[#81cebe] transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-semibold text-white mb-4 text-sm">Connect</h4>
+<p class="text-sm text-slate-400">hello@womeninaquaculture.org</p>
+</div>
+</div>
+<div class="border-t border-white/10 mt-12 pt-8 text-center">
+<p class="text-sm text-slate-500">&copy; 2026 Women in Aquaculture. All rights reserved.</p>
+</div>
 </div>
 </footer>
 <script>window.addEventListener("scroll",function(){document.getElementById("site-header").classList.toggle("scrolled",window.scrollY>20)});</script>
+
 </body></html>
