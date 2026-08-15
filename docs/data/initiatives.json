@@ -1,0 +1,82 @@
+[
+  {
+    "name": "AKTEA — European Network of Women's Organisations in Fisheries and Aquaculture",
+    "acronym": "AKTEA",
+    "region": "Europe",
+    "country": "",
+    "focus": "Networking, advocacy, and visibility for women across European fisheries and aquaculture",
+    "description": "A European network bringing together women's organisations in the fisheries and aquaculture sector. AKTEA works to strengthen women's roles, improve their working conditions, and increase their visibility in policy and decision-making across EU member states.",
+    "url": "https://aktea.eu",
+    "verified": null
+  },
+  {
+    "name": "AWFishNet — African Women Fish Processors and Traders Network",
+    "acronym": "AWFishNet",
+    "region": "Africa",
+    "country": "",
+    "focus": "Empowering women fish processors and traders across Africa",
+    "description": "A pan-African network advocating for the rights and economic empowerment of women involved in fish processing and trading. AWFishNet works to improve market access, reduce post-harvest losses, and strengthen women's voice in fisheries governance across the continent.",
+    "url": "https://awfishnet.org",
+    "verified": null
+  },
+  {
+    "name": "Gender in Aquaculture and Fisheries Section — Asian Fisheries Society",
+    "acronym": "GAF",
+    "region": "Asia-Pacific",
+    "country": "",
+    "focus": "Research, advocacy, and knowledge-sharing on gender issues in Asian aquaculture and fisheries",
+    "description": "A specialist section of the Asian Fisheries Society dedicated to gender research, analysis, and advocacy in aquaculture and fisheries. GAF organises symposia, publishes research, and builds capacity for gender-responsive approaches across the Asia-Pacific region.",
+    "url": "https://www.asianfisheriessociety.org/gaf",
+    "verified": null
+  },
+  {
+    "name": "NOWA — Network of Women in Aquaculture",
+    "acronym": "NOWA",
+    "region": "Mediterranean & Black Sea",
+    "country": "",
+    "focus": "Supporting and connecting women working in aquaculture across the Mediterranean and Black Sea regions",
+    "description": "A regional network focused on empowering women in aquaculture across the Mediterranean and Black Sea. NOWA facilitates knowledge exchange, professional development, and advocacy to increase women's participation and leadership in the sector.",
+    "url": "https://nowaaquaculture.com",
+    "verified": null
+  },
+  {
+    "name": "Pacific Community (SPC) — Women in Fisheries Programme",
+    "acronym": "SPC",
+    "region": "Asia-Pacific",
+    "country": "",
+    "focus": "Gender equity in coastal fisheries and aquaculture across the Pacific Islands",
+    "description": "The Pacific Community's dedicated programme supporting women's participation in fisheries and aquaculture across Pacific Island countries and territories. SPC provides technical assistance, policy guidance, and capacity building to advance gender equity in the region's aquatic food systems.",
+    "url": "https://www.spc.int/fisheries",
+    "verified": null
+  },
+  {
+    "name": "WIOMSA — Women in Marine Science Network",
+    "acronym": "WIOMSA",
+    "region": "Africa",
+    "country": "",
+    "focus": "Supporting women marine scientists in the Western Indian Ocean region",
+    "description": "A network within the Western Indian Ocean Marine Science Association dedicated to supporting and connecting women marine scientists. WIOMSA's Women in Marine Science initiative promotes mentoring, capacity building, and leadership development for women researchers across East Africa and the Indian Ocean islands.",
+    "url": "https://www.wiomsa.org",
+    "verified": null
+  },
+  {
+    "name": "Women in Ocean Food",
+    "acronym": "",
+    "region": "Latin America & Caribbean",
+    "country": "",
+    "focus": "Amplifying women's roles in ocean food systems across Latin America and the Caribbean",
+    "description": "An initiative run in collaboration with Hatch Blue and Conservation International to amplify the voices and contributions of women working in ocean food systems. The programme supports women-led enterprises, promotes gender-responsive innovation, and connects women across the aquaculture and fisheries value chain in Latin America and the Caribbean.",
+    "url": "https://www.hatch.blue",
+    "verified": null
+  },
+  {
+    "name": "WSI — International Association for Women in the Seafood Industry",
+    "acronym": "WSI",
+    "region": "Global",
+    "country": "",
+    "focus": "Global advocacy, networking, and professional development for women in the seafood industry",
+    "description": "A global membership association working to advance women's leadership, equality, and professional development across the seafood industry. WSI organises events, provides mentoring, and advocates for gender equity at international industry conferences and policy forums.",
+    "url": "https://www.womeninseafood.org",
+    "verified": null
+  }
+]
